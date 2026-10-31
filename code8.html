@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-container": "#f3fffc", "inverse-primary": "#6bd8cb", "secondary": "#006b5f", "on-background": "#131b2e", "on-secondary-fixed": "#00201c", "tertiary-fixed": "#9cf2e8", "primary-fixed-dim": "#6bd8cb", "surface-bright": "#faf8ff", "primary-container": "#008378", "on-tertiary": "#ffffff", "on-error-container": "#93000a", "on-secondary-container": "#006f64", "on-error": "#ffffff", "on-primary-fixed": "#00201d", "on-surface": "#131b2e", "surface-container-lowest": "#ffffff", "surface-container": "#eaedff", "background": "#faf8ff", "surface": "#faf8ff", "on-primary": "#ffffff", "primary": "#00685f", "surface-container-low": "#f2f3ff", "on-tertiary-fixed": "#00201d", "on-surface-variant": "#3d4947", "secondary-container": "#6df5e1", "primary-fixed": "#89f5e7", "inverse-surface": "#283044", "surface-container-highest": "#dae2fd", "surface-container-high": "#e2e7ff", "tertiary-fixed-dim": "#80d5cb", "inverse-on-surface": "#eef0ff", "surface-dim": "#d2d9f4", "on-primary-fixed-variant": "#005049", "surface-tint": "#006a61", "tertiary": "#006860", "on-primary-container": "#f4fffc", "on-secondary-fixed-variant": "#005048", "on-tertiary-fixed-variant": "#00504a", "surface-variant": "#dae2fd", "secondary-fixed": "#71f8e4", "on-secondary": "#ffffff", "tertiary-container": "#248279", "error": "#ba1a1a", "outline-variant": "#bcc9c6", "error-container": "#ffdad6", "outline": "#6d7a77", "secondary-fixed-dim": "#4fdbc8" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "1rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-md": "1rem", "margin": "3rem", "margin-mobile": "1.25rem", "gutter": "1.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem" }, fontFamily: { "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-xl": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "display-xl-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] }, fontSize: { "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "display-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-xl-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;background-color:#faf8ff;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><button class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface active:scale-95 transition-transform" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Future Proof AI Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WkXhi84BcE0LhQ0i2FhhZ1rnJu57baNUXWyHclJEpvxSOYKyfY4kJwZ7vMbcFRqm6eLlai49KZrM64jhwaO-UG6rwWFW-RdvcDYROt3p-ek0GyeGThKC03wKG2HKhNynz97aT7cIET5xdj-IB63SFQA3ezPgiAPmq_qSxMWBBMcEIsDJNIdfNjGpSZba4XyPPPK6cKLGObm9EDXZPRpV4owKuHEawQEnxAIPWiedGVhw"/><h1 class="font-title-md text-title-md text-on-surface tracking-tight truncate max-w-[140px]">Mastery Quiz</h1></div><div class="flex items-center gap-space-sm"><div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/25 text-secondary font-label-sm text-label-sm"><span>2050</span></div><button class="w-11 h-11 flex items-center justify-center rounded-full active:scale-95 transition-transform"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANtuCfCYViiRTXXQSvc44e24LbWQYv2wuVVBhrodrCLm-1xeKQxX4_nXUR08M_GeNs1neSCzlrwqNILcV3pI_65OzR4RjVG_F2jD9ZiR253YxRUGtTxlHJp3fMGKrjGxXEYfsVK1axyv5UYm_QWsDOTpxMj5wa3UVe5JC4O2Uhjg_hxb_3UHeNVk-6e_uUrShhAWrTTK2uHUfBYGP6QzrdFN-auty7yMShkuvA2H0q"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full px-gutter-mobile pb-space-xl">
+<div class="flex flex-col gap-space-xs mt-space-sm mb-space-md">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+        Sprint 04 • Architecture
+      </span>
+<div class="flex items-center gap-1 text-primary font-label-md text-label-md bg-surface-container-high px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span>Streak: 4</span>
+</div>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight mt-1">
+      Future-Proof AI Mastery Challenge
+    </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+      Test your understanding of durable architecture, alignment, and 2050 engineering principles.
+    </p>
+</div>
+<div class="flex flex-col gap-2 p-3.5 bg-surface-container-low rounded-xl mb-space-md shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<span class="font-semibold text-primary">Question 2 of 5</span>
+<span class="text-on-surface-variant font-normal">40% Completed</span>
+</div>
+<div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden flex">
+<div class="h-full bg-primary rounded-full transition-all duration-500 ease-out" style="width: 40%;"></div>
+</div>
+</div>
+<div class="flex flex-col bg-surface-container-lowest rounded-2xl p-space-md shadow-md relative overflow-hidden mb-space-md">
+<div class="flex items-center justify-between gap-2 mb-space-sm">
+<span class="inline-flex items-center gap-1 text-primary font-label-sm text-label-sm uppercase tracking-wider bg-surface-container-low px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+        System Design 2035+
+      </span>
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span>+250 XP</span>
+</div>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface leading-snug mb-space-md">
+      Scenario: You are designing an AI study assistant for high schoolers. Which architectural choice ensures it still works seamlessly in 2035 when current LLMs are obsolete?
+    </h3>
+<div class="flex flex-col gap-space-sm" id="quiz-options-group">
+<button class="quiz-option group w-full text-left p-3.5 rounded-xl bg-surface-container-low text-on-surface transition-all duration-200 active:scale-[0.99] flex items-start gap-3" onclick="handleSelectOption(this, false, 'Hardcoded prompts degrade swiftly as model tokenizers and inference paradigms shift.')">
+<span class="opt-indicator w-6 h-6 rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center justify-center shrink-0 mt-0.5">
+          A
+        </span>
+<div class="flex-1 min-w-0">
+<p class="font-body-md text-body-md text-on-surface">Embed hardcoded prompt engineering tricks inside client-side JavaScript.</p>
+</div>
+</button>
+<button class="quiz-option group w-full text-left p-3.5 rounded-xl bg-secondary-container/30 text-on-surface shadow-[0_0_16px_2px_rgba(20,184,166,0.18)] transition-all duration-200 active:scale-[0.99] flex items-start gap-3" onclick="handleSelectOption(this, true, '')">
+<span class="opt-indicator w-6 h-6 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</span>
+<div class="flex-1 min-w-0">
+<p class="font-body-md text-body-md font-semibold text-on-surface">Decouple state into open data graphs and use interchangeable inference adapter microservices.</p>
+</div>
+</button>
+<button class="quiz-option group w-full text-left p-3.5 rounded-xl bg-surface-container-low text-on-surface transition-all duration-200 active:scale-[0.99] flex items-start gap-3" onclick="handleSelectOption(this, false, 'Proprietary APIs expose your tool to pricing shocks, deprecation, and platform vendor lock-in.')">
+<span class="opt-indicator w-6 h-6 rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center justify-center shrink-0 mt-0.5">
+          C
+        </span>
+<div class="flex-1 min-w-0">
+<p class="font-body-md text-body-md text-on-surface">Rely strictly on a single commercial closed-source API provider.</p>
+</div>
+</button>
+<button class="quiz-option group w-full text-left p-3.5 rounded-xl bg-surface-container-low text-on-surface transition-all duration-200 active:scale-[0.99] flex items-start gap-3" onclick="handleSelectOption(this, false, 'Unvalidated inputs and synthetic telemetry lead to silent state contamination over time.')">
+<span class="opt-indicator w-6 h-6 rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center justify-center shrink-0 mt-0.5">
+          D
+        </span>
+<div class="flex-1 min-w-0">
+<p class="font-body-md text-body-md text-on-surface">Avoid using any data validation schemas.</p>
+</div>
+</button>
+</div>
+</div>
+<div class="flex flex-col bg-surface-container-lowest rounded-2xl p-space-md shadow-sm mb-space-md transition-all duration-300" id="feedback-card">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">lightbulb</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="font-title-md text-title-md text-primary font-bold">Optimal Alignment!</span>
+<span class="text-xs px-2 py-0.2 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Foundational Rationale</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Correct! By isolating state from inference engines, foundation models can be replaced in minutes without data loss. Your students' personal learning graphs persist regardless of which AI model family leads the industry.
+        </p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between p-3.5 bg-surface-container-low rounded-xl mb-space-lg shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Milestone Tracker</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">2050 Certified Builder Badge</span>
+</div>
+</div>
+<div class="flex items-center gap-1 text-primary font-label-md text-label-md">
+<span>3/5</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+<div class="flex items-center gap-3 mt-auto">
+<button aria-label="Ask AI Tutor" class="w-12 h-12 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center active:scale-95 transition-transform shrink-0" onclick="handleExplainMore()">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+</button>
+<button class="flex-1 h-12 rounded-full bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md hover:bg-primary-container active:scale-[0.98] transition-all" onclick="handleNextQuestion()">
+<span>Continue to Question 3</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<script>
+  function handleSelectOption(btn, isCorrect, reason) {
+    const allButtons = document.querySelectorAll('.quiz-option');
+    allButtons.forEach(b => {
+      b.classList.remove('bg-secondary-container/30', 'shadow-[0_0_16px_2px_rgba(20,184,166,0.18)]', 'bg-error-container', 'text-on-error-container');
+      b.classList.add('bg-surface-container-low', 'text-on-surface');
+      const ind = b.querySelector('.opt-indicator');
+      if (ind && !b.contains(btn)) {
+        ind.className = 'opt-indicator w-6 h-6 rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center justify-center shrink-0 mt-0.5';
+      }
+    });
+
+    const ind = btn.querySelector('.opt-indicator');
+    const feedback = document.getElementById('feedback-card');
+
+    if (isCorrect) {
+      btn.classList.remove('bg-surface-container-low');
+      btn.classList.add('bg-secondary-container/30', 'shadow-[0_0_16px_2px_rgba(20,184,166,0.18)]');
+      if (ind) {
+        ind.className = 'opt-indicator w-6 h-6 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center shrink-0 mt-0.5';
+        ind.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span>';
+      }
+      feedback.innerHTML = `
+        <div class="flex items-start gap-3">
+          <div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed shrink-0 shadow-sm">
+            <span class="material-symbols-outlined text-[20px]">lightbulb</span>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-1.5 mb-1">
+              <span class="font-title-md text-title-md text-primary font-bold">Optimal Alignment!</span>
+              <span class="text-xs px-2 py-0.2 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">+250 XP</span>
+            </div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Correct! By isolating state from inference engines, foundation models can be replaced in minutes without data loss.
+            </p>
+          </div>
+        </div>
+      `;
+    } else {
+      btn.classList.remove('bg-surface-container-low');
+      btn.classList.add('bg-error-container', 'text-on-error-container');
+      if (ind) {
+        ind.className = 'opt-indicator w-6 h-6 rounded-full bg-error text-on-error font-label-md text-label-md flex items-center justify-center shrink-0 mt-0.5';
+        ind.innerHTML = '<span class="material-symbols-outlined text-[16px]">close</span>';
+      }
+      feedback.innerHTML = `
+        <div class="flex items-start gap-3">
+          <div class="w-8 h-8 rounded-full bg-error-container text-on-error-container flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-[20px]">sync_problem</span>
+          </div>
+          <div class="flex-1 min-w-0">
+            <span class="font-title-md text-title-md text-error font-bold mb-1 block">Brittle Architecture Alert</span>
+            <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              ${reason} Try exploring decoupled architectures that withstand model turnover.
+            </p>
+          </div>
+        </div>
+      `;
+    }
+  }
+
+  function handleExplainMore() {
+    alert("AI Peer Tutor: 'Remember, 2050 engineering decouples knowledge state (graphs) from execution layers (LLMs)!'");
+  }
+
+  function handleNextQuestion() {
+    const btn = event.currentTarget;
+    btn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Loading Question 3...</span>';
+    setTimeout(() => {
+      btn.innerHTML = '<span>Question 3 Loaded</span><span class="material-symbols-outlined text-[18px]">done</span>';
+    }, 600);
+  }
+</script></main></body></html>

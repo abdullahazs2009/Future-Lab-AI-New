@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-container": "#f3fffc", "inverse-primary": "#6bd8cb", "secondary": "#006b5f", "on-background": "#131b2e", "on-secondary-fixed": "#00201c", "tertiary-fixed": "#9cf2e8", "primary-fixed-dim": "#6bd8cb", "surface-bright": "#faf8ff", "primary-container": "#008378", "on-tertiary": "#ffffff", "on-error-container": "#93000a", "on-secondary-container": "#006f64", "on-error": "#ffffff", "on-primary-fixed": "#00201d", "on-surface": "#131b2e", "surface-container-lowest": "#ffffff", "surface-container": "#eaedff", "background": "#faf8ff", "surface": "#faf8ff", "on-primary": "#ffffff", "primary": "#00685f", "surface-container-low": "#f2f3ff", "on-tertiary-fixed": "#00201d", "on-surface-variant": "#3d4947", "secondary-container": "#6df5e1", "primary-fixed": "#89f5e7", "inverse-surface": "#283044", "surface-container-highest": "#dae2fd", "surface-container-high": "#e2e7ff", "tertiary-fixed-dim": "#80d5cb", "inverse-on-surface": "#eef0ff", "surface-dim": "#d2d9f4", "on-primary-fixed-variant": "#005049", "surface-tint": "#006a61", "tertiary": "#006860", "on-primary-container": "#f4fffc", "on-secondary-fixed-variant": "#005048", "on-tertiary-fixed-variant": "#00504a", "surface-variant": "#dae2fd", "secondary-fixed": "#71f8e4", "on-secondary": "#ffffff", "tertiary-container": "#248279", "error": "#ba1a1a", "outline-variant": "#bcc9c6", "error-container": "#ffdad6", "outline": "#6d7a77", "secondary-fixed-dim": "#4fdbc8" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "1rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-md": "1rem", "margin": "3rem", "margin-mobile": "1.25rem", "gutter": "1.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem" }, fontFamily: { "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-xl": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "display-xl-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] }, fontSize: { "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "display-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-xl-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;background-color:#faf8ff;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Future Proof AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WkXhi84BcE0LhQ0i2FhhZ1rnJu57baNUXWyHclJEpvxSOYKyfY4kJwZ7vMbcFRqm6eLlai49KZrM64jhwaO-UG6rwWFW-RdvcDYROt3p-ek0GyeGThKC03wKG2HKhNynz97aT7cIET5xdj-IB63SFQA3ezPgiAPmq_qSxMWBBMcEIsDJNIdfNjGpSZba4XyPPPK6cKLGObm9EDXZPRpV4owKuHEawQEnxAIPWiedGVhw"/><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface tracking-tight leading-none">Future Proof AI</span><span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Lab Chat</span></div></div><div class="flex items-center gap-space-sm"><div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/30 text-secondary font-label-sm text-label-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><span>VISION 2050</span></div><button class="w-11 h-11 flex items-center justify-center rounded-full active:scale-95 transition-transform"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANtuCfCYViiRTXXQSvc44e24LbWQYv2wuVVBhrodrCLm-1xeKQxX4_nXUR08M_GeNs1neSCzlrwqNILcV3pI_65OzR4RjVG_F2jD9ZiR253YxRUGtTxlHJp3fMGKrjGxXEYfsVK1axyv5UYm_QWsDOTpxMj5wa3UVe5JC4O2Uhjg_hxb_3UHeNVk-6e_uUrShhAWrTTK2uHUfBYGP6QzrdFN-auty7yMShkuvA2H0q"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full">
+<!-- Mentor Persona Header Banner -->
+<div class="px-gutter-mobile py-space-sm">
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between relative z-10">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-11 h-11 rounded-full bg-secondary-container flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">cognition</span>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-primary ring-2 ring-surface-container-low"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface">Nexus-50</span>
+<span class="bg-secondary-container/60 text-secondary font-label-sm text-label-sm px-2 py-0.5 rounded-full">v4.8 Core</span>
+</div>
+<span class="font-label-md text-label-md text-primary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+              Online • Vision 2050 Sandbox
+            </span>
+</div>
+</div>
+<button class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container-highest/60 text-on-surface-variant active:scale-95 transition-all text-label-sm font-label-sm" id="clearChatBtn">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Clear Chat</span>
+</button>
+</div>
+<!-- Quick Metrics Bar -->
+<div class="grid grid-cols-3 gap-2 mt-3 pt-3 bg-surface-container-lowest/80 rounded-lg p-2.5 shadow-sm">
+<div class="flex flex-col items-center text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Arch Mode</span>
+<span class="font-title-md text-title-md text-primary">Resilient 2050</span>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Model Drift</span>
+<span class="font-title-md text-title-md text-secondary">0.02% Safe</span>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Fallbacks</span>
+<span class="font-title-md text-title-md text-primary">Triple Mesh</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Prompt Accelerator Chips Carousel -->
+<div class="py-space-xs px-gutter-mobile overflow-x-auto no-scrollbar flex items-center gap-2">
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-container text-on-primary-container text-label-sm font-label-sm whitespace-nowrap shadow-sm">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span>Sparks</span>
+</div>
+<button class="prompt-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface text-label-md font-label-md whitespace-nowrap active:bg-secondary-container/50 transition-colors shadow-sm" data-text="How do I avoid model lock-in?">
+      ✨ How do I avoid model lock-in?
+    </button>
+<button class="prompt-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface text-label-md font-label-md whitespace-nowrap active:bg-secondary-container/50 transition-colors shadow-sm" data-text="Test my project idea for 2050 readiness">
+      🎯 Test my project idea for 2050 readiness
+    </button>
+<button class="prompt-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface text-label-md font-label-md whitespace-nowrap active:bg-secondary-container/50 transition-colors shadow-sm" data-text="Explain vector drift like I am 16">
+      🧭 Explain vector drift like I am 16
+    </button>
+</div>
+<!-- Conversational Stream -->
+<div class="flex flex-col gap-space-md px-gutter-mobile py-space-md" id="chatStream">
+<!-- Nexus Greeting Message -->
+<div class="flex items-start gap-2.5 max-w-[92%]">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+<span class="material-symbols-outlined text-[18px]">smart_toy</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-primary font-bold">Nexus-50 Mentor</span>
+<span class="font-label-sm text-label-sm text-outline">10:41 AM</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface p-3.5 rounded-2xl rounded-tl-sm shadow-sm font-body-md text-body-md leading-relaxed">
+          Hey there! Ready to future-proof your next creation? Drop your app idea or ask me how to keep your AI resilient against rapid model evolution. Let's design something that still thrives in 2050! 🚀
+        </div>
+</div>
+</div>
+<!-- Student Initial Question -->
+<div class="flex items-start gap-2.5 max-w-[90%] self-end flex-row-reverse">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+<span class="material-symbols-outlined text-[18px]">person</span>
+</div>
+<div class="flex flex-col gap-1 items-end">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-outline">10:42 AM</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">You (Builder)</span>
+</div>
+<div class="bg-primary text-on-primary p-3.5 rounded-2xl rounded-tr-sm shadow-sm font-body-md text-body-md leading-relaxed">
+          I am building an automated study buddy. How do I make sure it doesn't get obsolete next year?
+        </div>
+</div>
+</div>
+<!-- Nexus Detailed Architectural Breakdown -->
+<div class="flex items-start gap-2.5 max-w-[96%]">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+<span class="material-symbols-outlined text-[18px]">smart_toy</span>
+</div>
+<div class="flex flex-col gap-1.5 w-full">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-primary font-bold">Nexus-50 Mentor</span>
+<span class="font-label-sm text-label-sm text-outline">10:43 AM</span>
+<span class="px-1.5 py-0.5 rounded bg-secondary-container/40 text-secondary font-label-sm text-label-sm">Architecture Blueprint</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface p-4 rounded-2xl rounded-tl-sm shadow-sm flex flex-col gap-3 font-body-md text-body-md">
+<p class="text-on-surface">
+            Smart question. LLMs mutate quarterly, but <strong class="text-primary">rock-solid design principles</strong> last decades. Here is your 3-pillar resilience blueprint:
+          </p>
+<!-- Pillar 1 -->
+<div class="bg-surface-container-low p-3 rounded-xl flex flex-col gap-1 shadow-sm">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center text-label-sm font-bold">1</span>
+<span class="font-title-md text-title-md text-on-surface">Decouple State from the Model</span>
+</div>
+<p class="text-on-surface-variant font-body-sm text-body-sm pl-8">
+              Never let student memories live inside a vendor's contextual window. Store comprehension history as open graph schemas. The model is just a transient engine, not your database!
+            </p>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface-container-low p-3 rounded-xl flex flex-col gap-1 shadow-sm">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-label-sm font-bold">2</span>
+<span class="font-title-md text-title-md text-on-surface">Strict Schema Contracts</span>
+</div>
+<p class="text-on-surface-variant font-body-sm text-body-sm pl-8">
+              Force AI outputs through strict JSON TypeBox/Zod validation layers. When GPT-6 or Claude-5 arrives, your UI pipeline won't shatter from spontaneous tone changes.
+            </p>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface-container-low p-3 rounded-xl flex flex-col gap-1 shadow-sm">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center text-label-sm font-bold">3</span>
+<span class="font-title-md text-title-md text-on-surface">Multi-Model Fallback Mesh</span>
+</div>
+<p class="text-on-surface-variant font-body-sm text-body-sm pl-8">
+              Route heavy synthetic reasoning to frontier cloud models, and instant flashcard quizzes to lightweight offline WebLLM runtimes on device.
+            </p>
+</div>
+<!-- Inline Visual Schematic Card -->
+<div class="mt-1 bg-surface-container rounded-xl p-3 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">account_tree</span>
+                2050 Resilient Mesh Simulation
+              </span>
+<span class="font-label-sm text-label-sm text-secondary">Verified Schema</span>
+</div>
+<!-- Interactive visual diagram representation -->
+<div class="grid grid-cols-3 gap-2 text-center pt-1">
+<div class="p-2 bg-surface-container-lowest rounded-lg shadow-sm flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-[20px]">devices</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold mt-1">Local Edge</span>
+<span class="font-label-sm text-label-sm text-outline">Zero Latency</span>
+</div>
+<div class="p-2 bg-secondary-container/40 rounded-lg shadow-sm flex flex-col items-center">
+<span class="material-symbols-outlined text-secondary text-[20px]">hub</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-1">Schema Gate</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Validated</span>
+</div>
+<div class="p-2 bg-surface-container-lowest rounded-lg shadow-sm flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-[20px]">cloud_sync</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold mt-1">Deep Reasoner</span>
+<span class="font-label-sm text-label-sm text-outline">Hot Swappable</span>
+</div>
+</div>
+</div>
+<!-- Interactive Action Button Group -->
+<div class="flex items-center gap-2 pt-1">
+<button class="action-test-btn px-3 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md flex items-center gap-1.5 active:scale-95 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+              Run Schema Stress Test
+            </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1.5 active:scale-95 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[16px]">bookmark_add</span>
+              Save Blueprint
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Real-time Interactive Sandbox Activity Card -->
+<div class="my-space-xs p-3.5 rounded-2xl bg-surface-container-high/60 flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary flex items-center justify-center text-on-secondary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">psychology_alt</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Try Prompt Mutation Simulation</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Watch your study buddy adapt to 2030, 2040, &amp; 2050 models</span>
+</div>
+<button class="px-3 py-1 rounded-full bg-primary text-on-primary font-label-md text-label-md whitespace-nowrap active:scale-95 transition-transform shadow-sm">
+        Simulate
+      </button>
+</div>
+</div>
+<!-- Bottom Message Input Dock -->
+<div class="sticky bottom-0 w-full px-gutter-mobile pb-3 pt-2 bg-surface/90 backdrop-blur-md">
+<div class="bg-surface-container-lowest rounded-2xl p-2 shadow-md flex flex-col gap-2">
+<div class="flex items-center gap-2 px-2">
+<button class="w-9 h-9 rounded-full bg-surface-container-low text-primary flex items-center justify-center active:scale-95 transition-transform" id="voiceWaveBtn" title="Record Voice Query">
+<span class="material-symbols-outlined text-[20px]">graphic_eq</span>
+</button>
+<input class="flex-1 bg-transparent border-0 outline-none text-on-surface placeholder:text-outline font-body-md text-body-md py-1" id="chatInput" placeholder="Ask Nexus-50 about your 2050 system..." type="text"/>
+<button class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center active:scale-95 transition-transform shadow-md disabled:opacity-50" id="sendMessageBtn" title="Send Query">
+<span class="material-symbols-outlined text-[20px]">send</span>
+</button>
+</div>
+<!-- Quick Context Bar -->
+<div class="flex items-center justify-between px-2 pt-1 border-t-0 text-on-surface-variant">
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-1 font-label-sm text-label-sm text-outline hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+<span>Temperature: 0.3</span>
+</button>
+<span class="text-outline">•</span>
+<button class="flex items-center gap-1 font-label-sm text-label-sm text-outline hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[14px]">memory</span>
+<span>Context: 128k</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          Resilience Guard Active
+        </span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initNexusChat() {
+    const input = document.getElementById('chatInput');
+    const sendBtn = document.getElementById('sendMessageBtn');
+    const stream = document.getElementById('chatStream');
+    const clearBtn = document.getElementById('clearChatBtn');
+    const promptChips = document.querySelectorAll('.prompt-chip');
+    const voiceBtn = document.getElementById('voiceWaveBtn');
+
+    // Handle Quick prompt chip clicks
+    promptChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        const text = chip.getAttribute('data-text');
+        if (text && input) {
+          input.value = text;
+          input.focus();
+        }
+      });
+    });
+
+    // Handle Voice wave micro-interaction
+    let isRecording = false;
+    if (voiceBtn) {
+      voiceBtn.addEventListener('click', () => {
+        isRecording = !isRecording;
+        if (isRecording) {
+          voiceBtn.classList.remove('bg-surface-container-low', 'text-primary');
+          voiceBtn.classList.add('bg-error-container', 'text-on-error-container', 'animate-pulse');
+        } else {
+          voiceBtn.classList.remove('bg-error-container', 'text-on-error-container', 'animate-pulse');
+          voiceBtn.classList.add('bg-surface-container-low', 'text-primary');
+        }
+      });
+    }
+
+    // Append Builder message and simulate mentor answer
+    function sendMessage() {
+      const query = input.value.trim();
+      if (!query) return;
+
+      const timeString = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+      // User Message Element
+      const userNode = document.createElement('div');
+      userNode.className = "flex items-start gap-2.5 max-w-[90%] self-end flex-row-reverse transition-all transform translate-y-2 opacity-0";
+      userNode.innerHTML = `
+        <div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+          <span class="material-symbols-outlined text-[18px]">person</span>
+        </div>
+        <div class="flex flex-col gap-1 items-end">
+          <div class="flex items-center gap-2">
+            <span class="font-label-sm text-label-sm text-outline">${timeString}</span>
+            <span class="font-label-sm text-label-sm text-secondary font-bold">You (Builder)</span>
+          </div>
+          <div class="bg-primary text-on-primary p-3.5 rounded-2xl rounded-tr-sm shadow-sm font-body-md text-body-md leading-relaxed">
+            ${escapeHtml(query)}
+          </div>
+        </div>
+      `;
+
+      stream.appendChild(userNode);
+      input.value = '';
+
+      // Trigger animation
+      requestAnimationFrame(() => {
+        userNode.classList.remove('translate-y-2', 'opacity-0');
+      });
+
+      // Scroll into view
+      userNode.scrollIntoView({ behavior: 'smooth', block: 'end' });
+
+      // Simulated Nexus Mentor Response after momentary delay
+      setTimeout(() => {
+        const mentorNode = document.createElement('div');
+        mentorNode.className = "flex items-start gap-2.5 max-w-[94%] transition-all transform translate-y-2 opacity-0";
+        mentorNode.innerHTML = `
+          <div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+            <span class="material-symbols-outlined text-[18px]">smart_toy</span>
+          </div>
+          <div class="flex flex-col gap-1">
+            <div class="flex items-center gap-2">
+              <span class="font-label-sm text-label-sm text-primary font-bold">Nexus-50 Mentor</span>
+              <span class="font-label-sm text-label-sm text-outline">${timeString}</span>
+            </div>
+            <div class="bg-surface-container-lowest text-on-surface p-3.5 rounded-2xl rounded-tl-sm shadow-sm font-body-md text-body-md leading-relaxed">
+              Evaluating your query against the <strong>2050 Architecture Invariance standard</strong>...
+              <div class="mt-2 p-2.5 rounded-lg bg-surface-container-low text-on-surface-variant font-body-sm text-body-sm flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+                <span>Insight logged: Ensure you preserve raw user events in immutable log streams so future cognitive engines can re-synthesize state safely.</span>
+              </div>
+            </div>
+          </div>
+        `;
+        stream.appendChild(mentorNode);
+        requestAnimationFrame(() => {
+          mentorNode.classList.remove('translate-y-2', 'opacity-0');
+        });
+        mentorNode.scrollIntoView({ behavior: 'smooth', block: 'end' });
+      }, 700);
+    }
+
+    if (sendBtn) {
+      sendBtn.addEventListener('click', sendMessage);
+    }
+
+    if (input) {
+      input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          sendMessage();
+        }
+      });
+    }
+
+    // Clear Chat logic with confirmation
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        const timeNow = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        stream.innerHTML = `
+          <div class="flex items-start gap-2.5 max-w-[92%]">
+            <div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+              <span class="material-symbols-outlined text-[18px]">smart_toy</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <div class="flex items-center gap-2">
+                <span class="font-label-sm text-label-sm text-primary font-bold">Nexus-50 Mentor</span>
+                <span class="font-label-sm text-label-sm text-outline">${timeNow}</span>
+              </div>
+              <div class="bg-surface-container-lowest text-on-surface p-3.5 rounded-2xl rounded-tl-sm shadow-sm font-body-md text-body-md leading-relaxed">
+                Canvas cleared! Your 2050 Sandbox is refreshed. Drop another architecture idea or test your fallback schemas anytime.
+              </div>
+            </div>
+          </div>
+        `;
+      });
+    }
+
+    function escapeHtml(string) {
+      const div = document.createElement('div');
+      div.textContent = string;
+      return div.innerHTML;
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-4px_20px_rgba(13,148,136,0.06)]" data-active-classes="text-primary font-label-md"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">space_dashboard</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors" data-path="purposes" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-sm text-label-sm mt-0.5">Purposes</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors" data-path="how-it-works" href="#"><span class="material-symbols-outlined text-[22px]">account_tree</span><span class="font-label-sm text-label-sm mt-0.5">How Works</span></a><a aria-current="page" class="flex flex-col items-center justify-center w-14 h-12 transition-colors text-primary font-label-md" data-path="lab-chat" href="#"><span class="material-symbols-outlined text-[22px]">smart_toy</span><span class="font-label-sm text-label-sm mt-0.5">Lab Chat</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors" data-path="more-menu" href="#"><span class="material-symbols-outlined text-[22px]">grid_view</span><span class="font-label-sm text-label-sm mt-0.5">More</span></a></div></nav></body></html>

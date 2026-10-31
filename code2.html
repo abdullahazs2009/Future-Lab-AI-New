@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-container": "#f3fffc", "inverse-primary": "#6bd8cb", "secondary": "#006b5f", "on-background": "#131b2e", "on-secondary-fixed": "#00201c", "tertiary-fixed": "#9cf2e8", "primary-fixed-dim": "#6bd8cb", "surface-bright": "#faf8ff", "primary-container": "#008378", "on-tertiary": "#ffffff", "on-error-container": "#93000a", "on-secondary-container": "#006f64", "on-error": "#ffffff", "on-primary-fixed": "#00201d", "on-surface": "#131b2e", "surface-container-lowest": "#ffffff", "surface-container": "#eaedff", "background": "#faf8ff", "surface": "#faf8ff", "on-primary": "#ffffff", "primary": "#00685f", "surface-container-low": "#f2f3ff", "on-tertiary-fixed": "#00201d", "on-surface-variant": "#3d4947", "secondary-container": "#6df5e1", "primary-fixed": "#89f5e7", "inverse-surface": "#283044", "surface-container-highest": "#dae2fd", "surface-container-high": "#e2e7ff", "tertiary-fixed-dim": "#80d5cb", "inverse-on-surface": "#eef0ff", "surface-dim": "#d2d9f4", "on-primary-fixed-variant": "#005049", "surface-tint": "#006a61", "tertiary": "#006860", "on-primary-container": "#f4fffc", "on-secondary-fixed-variant": "#005048", "on-tertiary-fixed-variant": "#00504a", "surface-variant": "#dae2fd", "secondary-fixed": "#71f8e4", "on-secondary": "#ffffff", "tertiary-container": "#248279", "error": "#ba1a1a", "outline-variant": "#bcc9c6", "error-container": "#ffdad6", "outline": "#6d7a77", "secondary-fixed-dim": "#4fdbc8" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "1rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-md": "1rem", "margin": "3rem", "margin-mobile": "1.25rem", "gutter": "1.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem" }, fontFamily: { "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-xl": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "display-xl-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] }, fontSize: { "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "display-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-xl-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;background-color:#faf8ff;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Future Proof AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WkXhi84BcE0LhQ0i2FhhZ1rnJu57baNUXWyHclJEpvxSOYKyfY4kJwZ7vMbcFRqm6eLlai49KZrM64jhwaO-UG6rwWFW-RdvcDYROt3p-ek0GyeGThKC03wKG2HKhNynz97aT7cIET5xdj-IB63SFQA3ezPgiAPmq_qSxMWBBMcEIsDJNIdfNjGpSZba4XyPPPK6cKLGObm9EDXZPRpV4owKuHEawQEnxAIPWiedGVhw"/><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface tracking-tight leading-none">Future Proof AI</span><span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Purposes</span></div></div><div class="flex items-center gap-space-sm"><div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/30 text-secondary font-label-sm text-label-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><span>VISION 2050</span></div><button class="w-11 h-11 flex items-center justify-center rounded-full active:scale-95 transition-transform"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANtuCfCYViiRTXXQSvc44e24LbWQYv2wuVVBhrodrCLm-1xeKQxX4_nXUR08M_GeNs1neSCzlrwqNILcV3pI_65OzR4RjVG_F2jD9ZiR253YxRUGtTxlHJp3fMGKrjGxXEYfsVK1axyv5UYm_QWsDOTpxMj5wa3UVe5JC4O2Uhjg_hxb_3UHeNVk-6e_uUrShhAWrTTK2uHUfBYGP6QzrdFN-auty7yMShkuvA2H0q"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full px-margin-mobile space-y-space-lg pb-space-xl">
+<!-- Friendly Top Section Header -->
+<section class="flex flex-col space-y-space-xs pt-space-sm">
+<div class="inline-flex items-center gap-1.5 self-start px-3 py-1 rounded-full bg-secondary-container/40 text-secondary">
+<span class="material-symbols-outlined text-[15px] animate-pulse">wb_twilight</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Vision 2050 Deep Dive</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">
+      What We Are Building For
+    </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+      Solving genuine human challenges engineered to outlast hype cycles and endure for decades across generations of young builders.
+    </p>
+</section>
+<!-- Impact Matrix 2025 vs 2050 Toggle Card -->
+<section class="flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">swap_horiz</span>
+<span class="font-title-md text-title-md text-on-surface">Impact Horizon Matrix</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Interactive</span>
+</div>
+<!-- Switcher Bar -->
+<div class="flex bg-surface-container-low p-1 rounded-full relative">
+<button class="flex-1 py-1.5 rounded-full font-label-md text-label-md text-center transition-all bg-surface-container-lowest text-on-surface shadow-sm" id="btn-horizon-2025" onclick="switchHorizon('2025')">
+        2025 Current Hype
+      </button>
+<button class="flex-1 py-1.5 rounded-full font-label-md text-label-md text-center transition-all text-on-surface-variant" id="btn-horizon-2050" onclick="switchHorizon('2050')">
+        2050 Resilient Utility
+      </button>
+</div>
+<!-- Toggleable Comparative Content -->
+<div class="flex flex-col space-y-space-sm transition-opacity duration-300" id="horizon-2025-content">
+<div class="flex items-start gap-space-sm p-3 rounded-lg bg-surface-container-high/40">
+<span class="material-symbols-outlined text-outline text-[20px] mt-0.5">bolt</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface">Short-Cycle Ephemera</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Monetized novelty prompts, closed API paywalls, disposable chatbot wrappers, and fragile corporate platform lock-in.</p>
+</div>
+</div>
+<div class="flex items-center justify-between px-2 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Durability Confidence</span>
+<span class="font-label-sm text-label-sm text-error font-bold">Fragile (12-18 mos)</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-error h-1.5 rounded-full w-1/4"></div>
+</div>
+</div>
+<div class="hidden flex flex-col space-y-space-sm transition-opacity duration-300" id="horizon-2050-content">
+<div class="flex items-start gap-space-sm p-3 rounded-lg bg-secondary-container/20">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">verified</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-secondary">Intergenerational Public Infrastructure</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Locally auditable open weights, post-quantum sovereign security, regenerative climate modeling, and cooperative youth governance.</p>
+</div>
+</div>
+<div class="flex items-center justify-between px-2 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Durability Confidence</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Generational (30+ yrs)</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-1.5 rounded-full w-11/12"></div>
+</div>
+</div>
+</section>
+<!-- 4 Purpose Domain Cards -->
+<section class="flex flex-col space-y-space-md">
+<div class="flex items-center justify-between px-1">
+<span class="font-title-md text-title-md text-on-surface">Pillars of Impact</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">4 Strategic Domains</span>
+</div>
+<!-- Domain Card 1 -->
+<article class="flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm relative overflow-hidden group">
+<div class="absolute -right-6 -top-6 w-24 h-24 bg-primary-fixed/20 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary shadow-[0_0_12px_rgba(0,104,95,0.18)]">
+<span class="material-symbols-outlined text-[22px]">school</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-low text-secondary font-semibold">
+          Domain 01
+        </span>
+</div>
+<div class="flex flex-col space-y-1">
+<h2 class="font-title-lg text-title-lg text-on-surface font-bold">
+          Lifelong Hyper-Personalized Education
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Adaptive AI tutors that evolve alongside a student from middle school exploration through PhD breakthroughs, preserving cognitive sovereignty without predatory data lock-in.
+        </p>
+</div>
+<div class="pt-2 flex flex-wrap gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Self-Sovereign Learning</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Zero Lock-In</span>
+</div>
+</article>
+<!-- Domain Card 2 -->
+<article class="flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm relative overflow-hidden group">
+<div class="absolute -right-6 -top-6 w-24 h-24 bg-primary-fixed/20 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary shadow-[0_0_12px_rgba(0,104,95,0.18)]">
+<span class="material-symbols-outlined text-[22px]">eco</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-low text-secondary font-semibold">
+          Domain 02
+        </span>
+</div>
+<div class="flex flex-col space-y-1">
+<h2 class="font-title-lg text-title-lg text-on-surface font-bold">
+          Planetary &amp; Climate Modeling
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Autonomous micro-climate sensory grids simulating biosphere equilibriums and neighborhood-level resource replenishment models through 2050 and beyond.
+        </p>
+</div>
+<div class="pt-2 flex flex-wrap gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Micro-Grid Mesh</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Ecological Feedback</span>
+</div>
+</article>
+<!-- Domain Card 3 -->
+<article class="flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm relative overflow-hidden group">
+<div class="absolute -right-6 -top-6 w-24 h-24 bg-primary-fixed/20 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary shadow-[0_0_12px_rgba(0,104,95,0.18)]">
+<span class="material-symbols-outlined text-[22px]">vital_signs</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-low text-secondary font-semibold">
+          Domain 03
+        </span>
+</div>
+<div class="flex flex-col space-y-1">
+<h2 class="font-title-lg text-title-lg text-on-surface font-bold">
+          Bio-Digital Health Longevity
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Decentralized diagnostic telemetry nodes operating on post-quantum cryptographic primitives, safeguarding personal molecular profiles against future unauthorized decryption.
+        </p>
+</div>
+<div class="pt-2 flex flex-wrap gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Post-Quantum Crypt</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Edge Diagnostics</span>
+</div>
+</article>
+<!-- Domain Card 4 -->
+<article class="flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm relative overflow-hidden group">
+<div class="absolute -right-6 -top-6 w-24 h-24 bg-primary-fixed/20 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary shadow-[0_0_12px_rgba(0,104,95,0.18)]">
+<span class="material-symbols-outlined text-[22px]">diversity_3</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-low text-secondary font-semibold">
+          Domain 04
+        </span>
+</div>
+<div class="flex flex-col space-y-1">
+<h2 class="font-title-lg text-title-lg text-on-surface font-bold">
+          Community-Governed Civic Tools
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Transparent, consensus-driven systems empowering local youth collectives with genuine democratic agency over urban planning, municipal budgets, and algorithmic ethics.
+        </p>
+</div>
+<div class="pt-2 flex flex-wrap gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Decentralized Voting</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Youth Collectives</span>
+</div>
+</article>
+</section>
+<!-- Interactive Youth Builder Spotlight -->
+<section class="flex flex-col bg-surface-container-low rounded-xl p-space-md space-y-space-sm relative overflow-hidden">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="A portrait of a cheerful young diverse student architect wearing eco-friendly tech gear looking optimistically toward a bright sustainable 2050 cityscape filled with lush vertical gardens and clean architecture, bathed in soft daylight and teal highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyUvtfusHhyTcenT0yj7FNjT1Mpq42ZBuf7m0eS10IUphvvycl4hIOCEOy8JW8U_BPDftmDlNlPwZm90R3inVNxxNXUIFQNvSmuDqgbjHjsrZ1locgB0YEn81WQybAdV-eOIuaVRTSZ4cxUdxBDYoSGa5YcNtt48SXmT8Q6fi_1_a9zMIyPzkCw8zgdUWA_HLPVJ3D-vjb3WwVcDpB4K9KYwTzeJWxSm2EmLeyPwJM"/>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface">Pioneer Cohort Voice</span>
+<span class="font-label-sm text-label-sm text-secondary">Aria Chen, 17 • Biosphere Systems Lead</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic leading-relaxed">
+      “We don't need another viral wrapper. We are coding algorithms that will protect our coastal communities and water reservoirs when we turn forty-two.”
+    </p>
+</section>
+<!-- Call-to-Action to Timeline -->
+<section class="flex flex-col items-center text-center p-space-md bg-surface-container-lowest rounded-xl shadow-sm space-y-space-sm">
+<div class="w-12 h-12 rounded-full bg-secondary-container/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">timeline</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">
+      Ready to Trace the Evolution?
+    </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs">
+      Examine our progressive milestone roadmap mapped step-by-step from present day to 2050.
+    </p>
+<a class="w-full flex items-center justify-center gap-2 py-3 px-6 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-[0_0_16px_rgba(0,104,95,0.25)] active:scale-95 transition-all" data-path="how-it-works" href="#">
+<span>Inspect the Timeline Roadmap</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</section>
+</div>
+<script>
+  function switchHorizon(mode) {
+    const btn2025 = document.getElementById('btn-horizon-2025');
+    const btn2050 = document.getElementById('btn-horizon-2050');
+    const content2025 = document.getElementById('horizon-2025-content');
+    const content2050 = document.getElementById('horizon-2050-content');
+
+    if (mode === '2050') {
+      btn2050.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+      btn2050.classList.remove('text-on-surface-variant');
+      btn2025.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+      btn2025.classList.add('text-on-surface-variant');
+
+      content2025.classList.add('hidden');
+      content2050.classList.remove('hidden');
+    } else {
+      btn2025.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+      btn2025.classList.remove('text-on-surface-variant');
+      btn2050.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+      btn2050.classList.add('text-on-surface-variant');
+
+      content2050.classList.add('hidden');
+      content2025.classList.remove('hidden');
+    }
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-4px_20px_rgba(13,148,136,0.06)]" data-active-classes="text-primary font-label-md"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">space_dashboard</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center w-14 h-12 transition-colors text-primary font-label-md" data-path="purposes" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-sm text-label-sm mt-0.5">Purposes</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors" data-path="how-it-works" href="#"><span class="material-symbols-outlined text-[22px]">account_tree</span><span class="font-label-sm text-label-sm mt-0.5">How Works</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors" data-path="lab-chat" href="#"><span class="material-symbols-outlined text-[22px]">smart_toy</span><span class="font-label-sm text-label-sm mt-0.5">Lab Chat</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors" data-path="more-menu" href="#"><span class="material-symbols-outlined text-[22px]">grid_view</span><span class="font-label-sm text-label-sm mt-0.5">More</span></a></div></nav></body></html>

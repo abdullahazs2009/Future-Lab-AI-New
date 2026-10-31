@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Future Proof AI</title>
+  <meta name="description" content="Get in touch with the Future Proof AI team: send a message, read frequently asked questions, or join the weekly dispatch.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="index.html" aria-label="Future Proof AI home">
+        <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true" focusable="false">
+          <rect x="1" y="1" width="32" height="32" rx="9" fill="#0d9488"/>
+          <path d="M17 7l2.4 6.1L26 15l-6.6 1.9L17 23l-2.4-6.1L8 15l6.6-1.9z" fill="#ccfbf1"/>
+          <circle cx="25" cy="25" r="2.6" fill="#6df5e1"/>
+        </svg>
+        Future Proof AI
+      </a>
+      <nav aria-label="Main navigation">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span aria-hidden="true">☰</span> Menu
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+      <span class="vision-badge"><span class="dot" aria-hidden="true"></span>VISION 2050</span>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ CONTACT FORM ============ -->
+    <section class="hero" aria-labelledby="contact-h">
+      <div class="container" style="max-width:44rem;">
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Say hello</p>
+        <h1 id="contact-h">Contact us</h1>
+        <p class="lead" style="margin-bottom:2rem;">Questions, project ideas, or feedback from a fellow builder?
+        Fill this in and we’ll get back to you. Every message matters.</p>
+
+        <form class="card" id="contact-form" novalidate>
+          <div class="field">
+            <label for="cf-name">Your name</label>
+            <input type="text" id="cf-name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="cf-email">Email address</label>
+            <input type="email" id="cf-email" name="email" autocomplete="email" required
+                   aria-describedby="cf-email-hint">
+            <p class="hint" id="cf-email-hint">So we can reply — we never share it.</p>
+          </div>
+          <div class="field">
+            <label for="cf-subject">What’s it about?</label>
+            <input type="text" id="cf-subject" name="subject" placeholder="e.g. Study buddy idea">
+          </div>
+          <div class="field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" required placeholder="Tell us what you’re building or wondering about…"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send message ✉️</button>
+          <p class="hint">This demo form has no server behind it yet: on submit it validates your input and
+          offers to open your own email app, so nothing is lost.</p>
+          <div class="form-status hidden" id="cf-status" role="status"></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section id="faq" aria-labelledby="faq-h">
+      <div class="container" style="max-width:44rem;">
+        <p class="eyebrow">Builder Field Guide</p>
+        <div class="section-intro">
+          <h2 id="faq-h">Questions people actually ask</h2>
+          <p class="lead">Straightforward answers for curious students, teachers, and young builders. Tap a question to open it.</p>
+        </div>
+
+        <details class="acc">
+          <summary>Will current AI programming languages still exist in 2050?</summary>
+          <div class="body"><p>Languages like Python and JavaScript evolve but persist — what changes fastest are the AI
+          models themselves. That’s exactly why we teach you to separate your app’s structure from whichever model
+          powers it today.</p></div>
+        </details>
+        <details class="acc">
+          <summary>How can high school and college students prepare for 2050 AI jobs?</summary>
+          <div class="body"><p>Focus on fundamentals: systems design, data schemas, verification, and ethics. Model
+          providers will keep swapping; builders who understand durable architecture will always be needed.</p></div>
+        </details>
+        <details class="acc">
+          <summary>What if AI surpasses human coders before 2030?</summary>
+          <div class="body"><p>Then the people who specify <em>what</em> should be built — with clear contracts, guardrails,
+          and human-centered goals — become more valuable, not less. Coding gets cheaper; judgment doesn’t.</p></div>
+        </details>
+        <details class="acc">
+          <summary>Is Future Proof AI really free for students?</summary>
+          <div class="body"><p>Yes. The lessons and this website are free forever, supported by the Public Youth
+          Foundation. The only optional cost is your own Gemini API key if you want to use the Lab Chat — and that
+          has a generous free tier.</p></div>
+        </details>
+      </div>
+    </section>
+
+    <!-- ============ NEWSLETTER ============ -->
+    <section aria-labelledby="news-h">
+      <div class="container" style="max-width:44rem;">
+        <div class="panel-dark">
+          <h2 id="news-h">Stay ahead of the curve</h2>
+          <p>Weekly deep-dives into core AI systems, hardware frontiers, and interview prompts. Zero spam, pure craft.</p>
+          <form id="news-form" class="stack-lg">
+            <div class="field">
+              <label class="visually-hidden" for="news-email">Your email address</label>
+              <input type="email" id="news-email" name="email" placeholder="Enter your student email…" required
+                     style="max-width:22rem;">
+            </div>
+            <button class="btn btn-ghost" type="submit">Join →</button>
+            <div class="form-status hidden" id="news-status" role="status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OTHER WAYS ============ -->
+    <section aria-labelledby="other-h">
+      <div class="container">
+        <div class="section-intro">
+          <h2 id="other-h">Other ways to reach us</h2>
+        </div>
+        <div class="grid grid-3">
+          <article class="card" style="text-align:center;">
+            <div class="icon-badge" style="margin:0 auto 1rem;" aria-hidden="true">💬</div>
+            <h3>Email the team</h3>
+            <p>Fastest way to a human.</p>
+            <a class="btn btn-ghost" href="mailto:hello@futureproofai.example">hello@futureproofai.example</a>
+          </article>
+          <article class="card" style="text-align:center;">
+            <div class="icon-badge" style="margin:0 auto 1rem;" aria-hidden="true">🤖</div>
+            <h3>Ask the Lab AI</h3>
+            <p>Instant answers on our Home page chat.</p>
+            <a class="btn btn-ghost" href="index.html#lab-chat">Open Lab Chat</a>
+          </article>
+          <article class="card" style="text-align:center;">
+            <div class="icon-badge" style="margin:0 auto 1rem;" aria-hidden="true">📚</div>
+            <h3>Read the blueprint</h3>
+            <p>See how everything fits together.</p>
+            <a class="btn btn-ghost" href="about.html#how-it-works">How it works</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Future Proof AI</h2>
+          <p>Optimistic, durable AI education for students and young builders architecting the world of 2050. Free forever.</p>
+        </div>
+        <div>
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener noreferrer">Google AI Studio ↗</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Future Proof AI · 2050 Architecture Collective</span>
+        <span>Supported by the Public Youth Foundation</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

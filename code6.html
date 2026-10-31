@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-container": "#f3fffc", "inverse-primary": "#6bd8cb", "secondary": "#006b5f", "on-background": "#131b2e", "on-secondary-fixed": "#00201c", "tertiary-fixed": "#9cf2e8", "primary-fixed-dim": "#6bd8cb", "surface-bright": "#faf8ff", "primary-container": "#008378", "on-tertiary": "#ffffff", "on-error-container": "#93000a", "on-secondary-container": "#006f64", "on-error": "#ffffff", "on-primary-fixed": "#00201d", "on-surface": "#131b2e", "surface-container-lowest": "#ffffff", "surface-container": "#eaedff", "background": "#faf8ff", "surface": "#faf8ff", "on-primary": "#ffffff", "primary": "#00685f", "surface-container-low": "#f2f3ff", "on-tertiary-fixed": "#00201d", "on-surface-variant": "#3d4947", "secondary-container": "#6df5e1", "primary-fixed": "#89f5e7", "inverse-surface": "#283044", "surface-container-highest": "#dae2fd", "surface-container-high": "#e2e7ff", "tertiary-fixed-dim": "#80d5cb", "inverse-on-surface": "#eef0ff", "surface-dim": "#d2d9f4", "on-primary-fixed-variant": "#005049", "surface-tint": "#006a61", "tertiary": "#006860", "on-primary-container": "#f4fffc", "on-secondary-fixed-variant": "#005048", "on-tertiary-fixed-variant": "#00504a", "surface-variant": "#dae2fd", "secondary-fixed": "#71f8e4", "on-secondary": "#ffffff", "tertiary-container": "#248279", "error": "#ba1a1a", "outline-variant": "#bcc9c6", "error-container": "#ffdad6", "outline": "#6d7a77", "secondary-fixed-dim": "#4fdbc8" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "1rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-md": "1rem", "margin": "3rem", "margin-mobile": "1.25rem", "gutter": "1.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem" }, fontFamily: { "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-xl": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "display-xl-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] }, fontSize: { "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "display-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-xl-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;background-color:#faf8ff;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><button class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface active:scale-95 transition-transform" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Future Proof AI Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WkXhi84BcE0LhQ0i2FhhZ1rnJu57baNUXWyHclJEpvxSOYKyfY4kJwZ7vMbcFRqm6eLlai49KZrM64jhwaO-UG6rwWFW-RdvcDYROt3p-ek0GyeGThKC03wKG2HKhNynz97aT7cIET5xdj-IB63SFQA3ezPgiAPmq_qSxMWBBMcEIsDJNIdfNjGpSZba4XyPPPK6cKLGObm9EDXZPRpV4owKuHEawQEnxAIPWiedGVhw"/><h1 class="font-title-md text-title-md text-on-surface tracking-tight truncate max-w-[140px]">Case Studies</h1></div><div class="flex items-center gap-space-sm"><div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/25 text-secondary font-label-sm text-label-sm"><span>2050</span></div><button class="w-11 h-11 flex items-center justify-center rounded-full active:scale-95 transition-transform"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANtuCfCYViiRTXXQSvc44e24LbWQYv2wuVVBhrodrCLm-1xeKQxX4_nXUR08M_GeNs1neSCzlrwqNILcV3pI_65OzR4RjVG_F2jD9ZiR253YxRUGtTxlHJp3fMGKrjGxXEYfsVK1axyv5UYm_QWsDOTpxMj5wa3UVe5JC4O2Uhjg_hxb_3UHeNVk-6e_uUrShhAWrTTK2uHUfBYGP6QzrdFN-auty7yMShkuvA2H0q"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full pb-12">
+<div class="px-gutter-mobile pt-4 pb-2">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/20 text-secondary mb-2">
+<span class="material-symbols-outlined text-[16px]">history_edu</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Technological Archaeology</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Tales of Two Horizons: Case Studies</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5">Learn from historical breakthroughs and catastrophic failures to architect enduring technology.</p>
+</div>
+<div class="px-gutter-mobile mt-3 mb-2">
+<div class="bg-surface-container p-1 rounded-full flex gap-1 items-center justify-between">
+<button class="filter-btn flex-1 py-2 px-3 rounded-full font-label-md text-label-md text-on-primary bg-primary shadow-sm transition-all text-center" onclick="filterCards('all', this)">
+        All Stories
+      </button>
+<button class="filter-btn flex-1 py-2 px-3 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all text-center" onclick="filterCards('resilient', this)">
+        Aged Well
+      </button>
+<button class="filter-btn flex-1 py-2 px-3 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all text-center" onclick="filterCards('fragile', this)">
+        Aged Badly
+      </button>
+</div>
+</div>
+<div class="px-gutter-mobile flex flex-col gap-4 mt-2">
+<div class="case-card fragile bg-surface-container-lowest rounded-xl p-5 shadow-sm transition-all hover:shadow-md relative overflow-hidden" data-category="fragile">
+<div class="flex items-center justify-between mb-3">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-pulse"></span>
+<span>Aged Badly • Obsolete in 6 Months</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Circa 2024</span>
+</div>
+<div class="h-36 w-full rounded-lg overflow-hidden mb-3 relative">
+<img class="w-full h-full object-cover" data-alt="Futuristic glowing holographic app interfaces crumbling into digital sand and floating geometric fragments, cool slate tones with warning red highlights, cinematic tech minimalism style, 4k high definition aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB563R-CwqsYFkpEO8vCVut5uyX9gyQm9oOk0ooAfl_mOiHFDs7W53Lw8MnGm-gbzrMb7FlGRO80gmDochuXw65lOVZADDA2qasdC4xF5sTJDLazZxgpFC0iPoUiMcT90ql1rjXtnoPQQTSeMts6ukMK59i07f2FNe2fO-KjaWmXvWEu2ml58_4MhxptevxiQwZ7hkHvNGjvQ9JapyUocS0nv9cZxZ4V1QrQlGC6nTS"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold mb-2">The 2024 Disposable Wrapper Craze</h3>
+<div class="bg-surface-container-low rounded-lg p-3 mb-3">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-error">warning</span>
+          What Happened
+        </p>
+<p class="font-body-sm text-body-sm text-on-surface">10,000 startups built basic UI wrappers over proprietary endpoints without proprietary data or moat. Foundation updates wiped out 90% of them overnight.</p>
+</div>
+<div class="bg-primary/5 rounded-lg p-3">
+<p class="font-label-sm text-label-sm text-primary uppercase tracking-wider mb-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+          Lesson for 2050 Builders
+        </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">Value resides in the data schema and human workflow, not the transient prompt string.</p>
+</div>
+</div>
+<div class="case-card resilient bg-surface-container-lowest rounded-xl p-5 shadow-sm transition-all hover:shadow-md relative overflow-hidden" data-category="resilient">
+<div class="flex items-center justify-between mb-3">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/30 text-secondary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Aged Gracefully • Decade+ Benchmark</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Circa 2020</span>
+</div>
+<div class="h-36 w-full rounded-lg overflow-hidden mb-3 relative">
+<img class="w-full h-full object-cover" data-alt="Magnificent biological molecular protein crystal lattice structure shimmering with deep teal and cyan luminescence, micro-grid computational nodes, scientific laboratory aesthetic, soft atmospheric glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjs69G31SNtPChYZI-Puo65Z1KMPuZQcXJgkSmhCC97D37iOxVsNJXPJTZvbwd6pByJinmvw9kVPPi7hWKEqhXgkfLdjN2S5bkk8UR-1xqjXLAdXluZ0TbOcFlM7fn9rzeEe_Ly3dcvDv66FEb70nqJlRw15xvJngHYyHMxv-3NQPfcnfOnLV__MQwox9muDzEvRWasyh5t0y479LAZr79PtMM_7ihl-k_A1-UyjQn"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold mb-2">AlphaFold &amp; Open Protein Repositories</h3>
+<div class="bg-surface-container-low rounded-lg p-3 mb-3">
+<p class="font-label-sm text-label-sm text-secondary uppercase tracking-wider mb-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+          Why It Survived
+        </p>
+<p class="font-body-sm text-body-sm text-on-surface">Grounded in unchanging biological physics, modular open-science data formats, and self-verifying laboratory experiments.</p>
+</div>
+<div class="bg-primary/5 rounded-lg p-3">
+<p class="font-label-sm text-label-sm text-primary uppercase tracking-wider mb-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+          Lesson for 2050 Builders
+        </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">Anchor your AI in physical laws and mathematical invariables rather than shifting cultural fads.</p>
+</div>
+</div>
+<div class="case-card fragile bg-surface-container-lowest rounded-xl p-5 shadow-sm transition-all hover:shadow-md relative overflow-hidden" data-category="fragile">
+<div class="flex items-center justify-between mb-3">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-pulse"></span>
+<span>Aged Badly</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Circa 2023</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold mb-2">The Brittle Customer Voicebot of 2023</h3>
+<div class="bg-surface-container-low rounded-lg p-3 mb-3">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-error">sync_problem</span>
+          The Breakdown
+        </p>
+<p class="font-body-sm text-body-sm text-on-surface">Hallucinated fake return policies and arbitrary refund authorizations under pressure, costing millions in customer brand equity.</p>
+</div>
+<div class="bg-primary/5 rounded-lg p-3">
+<p class="font-label-sm text-label-sm text-primary uppercase tracking-wider mb-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+          Lesson for 2050 Builders
+        </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">Never delegate authoritative financial or contractual commitments without rigid determinism and deterministic circuit-breakers.</p>
+</div>
+</div>
+<div class="case-card resilient bg-surface-container-lowest rounded-xl p-5 shadow-sm transition-all hover:shadow-md relative overflow-hidden" data-category="resilient">
+<div class="flex items-center justify-between mb-3">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/30 text-secondary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Aged Gracefully</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Circa 2005 &amp; Beyond</span>
+</div>
+<div class="h-36 w-full rounded-lg overflow-hidden mb-3 relative">
+<img class="w-full h-full object-cover" data-alt="Deep space autonomous research probe exploring outer planetary rings, subtle solar panel reflections with soft turquoise telemetry rays, cosmic dust particles, realistic cinematic sci-fi render." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEvN8xkjZhh6gfyfNXRCpcgkORKfLIKi2GoCtqXEvxgP81aTIBbGsUNcN1djIHYjosJ-LcTjVxO6LfwqEJ3K82GHaUUvOJgJVuSq8SJvRqUtd5ivLKMkE01i0J0GzqeLFagMXyxiq3SwgnW4d8_AW8FjOD2eH77c4PlzRx8U15OBqar7Yk3uxUNBOMnY6WaYqli5nyrXgynKdT0WeY4YCh8ZSlF4dsrsOndOcPhx0u"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold mb-2">Deep Space Autonomous Probes</h3>
+<div class="bg-surface-container-low rounded-lg p-3 mb-3">
+<p class="font-label-sm text-label-sm text-secondary uppercase tracking-wider mb-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">satellite_alt</span>
+          Resilience Factor
+        </p>
+<p class="font-body-sm text-body-sm text-on-surface">Onboard heuristic fault-protection logic designed in 2005 that still maneuvers spacecraft light-years away today without Earth intervention.</p>
+</div>
+<div class="bg-primary/5 rounded-lg p-3">
+<p class="font-label-sm text-label-sm text-primary uppercase tracking-wider mb-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+          Lesson for 2050 Builders
+        </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">Simple, formally verified state machines running locally always outlast bloated cloud orchestration when the network goes dark.</p>
+</div>
+</div>
+</div>
+<div class="px-gutter-mobile mt-6">
+<div class="bg-surface-container-highest/60 rounded-xl p-5 shadow-sm relative overflow-hidden">
+<div class="flex items-center gap-2 mb-2">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[20px]">lightbulb</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">The Golden Heuristic</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        "Technologies built on ephemeral API interfaces decay with each release cycle. Systems architected around fundamental physics, rigorous contracts, and explicit human agency endure through generations."
+      </p>
+<div class="mt-4 flex items-center justify-between pt-3">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span class="font-label-sm text-label-sm font-semibold">2050 Architecture Rule #4</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 Case Studies Reviewed</span>
+</div>
+</div>
+</div>
+<div class="px-gutter-mobile mt-6 mb-2">
+<button class="w-full py-3.5 px-6 rounded-full bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md active:scale-95 transition-transform" onclick="openModal()">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>Submit a Case Study</span>
+</button>
+</div>
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-inverse-surface/40 backdrop-blur-sm hidden" id="submitModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-sm w-full p-5 shadow-xl relative animate-in fade-in zoom-in-95">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">publish</span>
+<h3 class="font-title-md text-title-md text-on-surface">Submit Architecture Archive</h3>
+</div>
+<button class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container active:scale-90" onclick="closeModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="space-y-3">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">System / Model Name</label>
+<input class="w-full bg-surface-container-low rounded-lg px-3 py-2 text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container transition-colors" placeholder="e.g. Gemini Sentinel 1" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Classification</label>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2 rounded-lg bg-secondary-container/30 text-secondary font-label-sm text-label-sm" type="button">Aged Well</button>
+<button class="py-2 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm" type="button">Aged Badly</button>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Enduring Lesson</label>
+<textarea class="w-full bg-surface-container-low rounded-lg p-3 text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container transition-colors" placeholder="What should young builders remember?" rows="2"></textarea>
+</div>
+<button class="w-full py-3 rounded-full bg-primary text-on-primary font-label-lg text-label-lg mt-2 active:scale-95 transition-transform" onclick="closeModal()">
+          Submit to Global Index
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function filterCards(type, btn) {
+    document.querySelectorAll('.filter-btn').forEach(b => {
+      b.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+      b.classList.add('text-on-surface-variant');
+    });
+    btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+    btn.classList.remove('text-on-surface-variant');
+
+    const cards = document.querySelectorAll('.case-card');
+    cards.forEach(card => {
+      if (type === 'all' || card.dataset.category === type) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  function openModal() {
+    document.getElementById('submitModal').classList.remove('hidden');
+  }
+
+  function closeModal() {
+    document.getElementById('submitModal').classList.add('hidden');
+  }
+</script></main></body></html>

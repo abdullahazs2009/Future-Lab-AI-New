@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-container": "#f3fffc", "inverse-primary": "#6bd8cb", "secondary": "#006b5f", "on-background": "#131b2e", "on-secondary-fixed": "#00201c", "tertiary-fixed": "#9cf2e8", "primary-fixed-dim": "#6bd8cb", "surface-bright": "#faf8ff", "primary-container": "#008378", "on-tertiary": "#ffffff", "on-error-container": "#93000a", "on-secondary-container": "#006f64", "on-error": "#ffffff", "on-primary-fixed": "#00201d", "on-surface": "#131b2e", "surface-container-lowest": "#ffffff", "surface-container": "#eaedff", "background": "#faf8ff", "surface": "#faf8ff", "on-primary": "#ffffff", "primary": "#00685f", "surface-container-low": "#f2f3ff", "on-tertiary-fixed": "#00201d", "on-surface-variant": "#3d4947", "secondary-container": "#6df5e1", "primary-fixed": "#89f5e7", "inverse-surface": "#283044", "surface-container-highest": "#dae2fd", "surface-container-high": "#e2e7ff", "tertiary-fixed-dim": "#80d5cb", "inverse-on-surface": "#eef0ff", "surface-dim": "#d2d9f4", "on-primary-fixed-variant": "#005049", "surface-tint": "#006a61", "tertiary": "#006860", "on-primary-container": "#f4fffc", "on-secondary-fixed-variant": "#005048", "on-tertiary-fixed-variant": "#00504a", "surface-variant": "#dae2fd", "secondary-fixed": "#71f8e4", "on-secondary": "#ffffff", "tertiary-container": "#248279", "error": "#ba1a1a", "outline-variant": "#bcc9c6", "error-container": "#ffdad6", "outline": "#6d7a77", "secondary-fixed-dim": "#4fdbc8" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "1rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-md": "1rem", "margin": "3rem", "margin-mobile": "1.25rem", "gutter": "1.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem" }, fontFamily: { "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-xl": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "display-xl-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] }, fontSize: { "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "display-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-xl-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;background-color:#faf8ff;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><button class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface active:scale-95 transition-transform" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Future Proof AI Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WkXhi84BcE0LhQ0i2FhhZ1rnJu57baNUXWyHclJEpvxSOYKyfY4kJwZ7vMbcFRqm6eLlai49KZrM64jhwaO-UG6rwWFW-RdvcDYROt3p-ek0GyeGThKC03wKG2HKhNynz97aT7cIET5xdj-IB63SFQA3ezPgiAPmq_qSxMWBBMcEIsDJNIdfNjGpSZba4XyPPPK6cKLGObm9EDXZPRpV4owKuHEawQEnxAIPWiedGVhw"/><h1 class="font-title-md text-title-md text-on-surface tracking-tight truncate max-w-[140px]">Builder Checklist</h1></div><div class="flex items-center gap-space-sm"><div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/25 text-secondary font-label-sm text-label-sm"><span>2050</span></div><button class="w-11 h-11 flex items-center justify-center rounded-full active:scale-95 transition-transform"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANtuCfCYViiRTXXQSvc44e24LbWQYv2wuVVBhrodrCLm-1xeKQxX4_nXUR08M_GeNs1neSCzlrwqNILcV3pI_65OzR4RjVG_F2jD9ZiR253YxRUGtTxlHJp3fMGKrjGxXEYfsVK1axyv5UYm_QWsDOTpxMj5wa3UVe5JC4O2Uhjg_hxb_3UHeNVk-6e_uUrShhAWrTTK2uHUfBYGP6QzrdFN-auty7yMShkuvA2H0q"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full pb-12">
+<!-- Atmospheric Ambient Backdrop -->
+<div class="px-gutter-mobile pt-space-md pb-space-lg flex flex-col gap-space-lg">
+<!-- Hero Header / Intro Block -->
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-1.5 self-start px-3 py-1 rounded-full bg-secondary-container/30 text-secondary">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Audit Suite v2.4</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight mt-1">
+        Is Your AI Future-Proof?
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Run your student project or product blueprint through the 2050 Resilience Protocol.
+      </p>
+</div>
+<!-- Live Readiness Gauge Bento Card -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-md flex flex-col gap-space-md relative overflow-hidden">
+<!-- Glow ambient accent -->
+<div class="absolute -top-12 -right-12 w-36 h-36 rounded-full bg-secondary-container/20 blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Composite Index</span>
+<span class="font-title-lg text-title-lg text-on-surface font-semibold">Future Readiness Gauge</span>
+</div>
+<div class="px-2.5 py-1 rounded-full bg-surface-container text-primary font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Adaptive 2050</span>
+</div>
+</div>
+<!-- Meter Visual Presentation -->
+<div class="flex items-center gap-space-md py-space-xs">
+<div class="relative w-24 h-24 flex items-center justify-center flex-shrink-0">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 100 100">
+<!-- Background track -->
+<circle class="text-surface-container" cx="50" cy="50" fill="transparent" r="40" stroke="currentColor" stroke-width="9"></circle>
+<!-- Live Progress fill -->
+<circle class="text-primary transition-all duration-700 ease-out" cx="50" cy="50" fill="transparent" id="gauge-circle" r="40" stroke="currentColor" stroke-dasharray="251.2" stroke-dashoffset="75.36" stroke-linecap="round" stroke-width="9"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="font-headline-md text-headline-md text-on-surface font-bold leading-none" id="score-percentage">71%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">SCORE</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-primary" id="tier-pill"></span>
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate" id="score-status">High Resilience</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2" id="score-desc">
+            Architecture shows decoupled resilience with high adaptability for 2050 agentic frameworks.
+          </p>
+<div class="mt-2 flex items-center gap-3 text-secondary font-label-sm text-label-sm">
+<span id="checked-counter">5 of 7 Completed</span>
+<span>•</span>
+<span class="bg-secondary-container/40 px-2 py-0.5 rounded-full text-secondary font-bold" id="grade-badge">Grade A-</span>
+</div>
+</div>
+</div>
+<!-- Quick Horizon Milestone Progress Track -->
+<div class="w-full bg-surface-container-low rounded-full h-2 overflow-hidden flex">
+<div class="bg-primary h-full transition-all duration-700 ease-out rounded-full" id="linear-gauge" style="width: 71.4%;"></div>
+</div>
+</div>
+<!-- Protocol Checklist Containers -->
+<div class="flex flex-col gap-space-lg">
+<!-- Pillar A -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">hub</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold tracking-wider uppercase">Pillar A</span>
+<h3 class="font-title-md text-title-md text-on-surface">Architecture &amp; Decoupling</h3>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant pillar-count" data-pillar="A">2/3</span>
+</div>
+<div class="flex flex-col gap-2">
+<!-- Item A1 -->
+<label class="group flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-lowest shadow-sm active:scale-[0.99] transition cursor-pointer select-none">
+<div class="mt-0.5 relative flex items-center justify-center">
+<input checked="" class="resilience-check peer sr-only" data-pillar="A" type="checkbox"/>
+<div class="w-5 h-5 rounded-md bg-surface-container peer-checked:bg-primary transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-on-primary scale-0 peer-checked:scale-100 transition-transform">check</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<span class="font-body-md text-body-md text-on-surface peer-checked:text-on-surface-variant peer-checked:line-through transition-colors">
+                Is foundation model API completely abstracted from UI logic?
+              </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Allows autonomous runtime switching across local &amp; frontier models.</p>
+</div>
+</label>
+<!-- Item A2 -->
+<label class="group flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-lowest shadow-sm active:scale-[0.99] transition cursor-pointer select-none">
+<div class="mt-0.5 relative flex items-center justify-center">
+<input checked="" class="resilience-check peer sr-only" data-pillar="A" type="checkbox"/>
+<div class="w-5 h-5 rounded-md bg-surface-container peer-checked:bg-primary transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-on-primary scale-0 peer-checked:scale-100 transition-transform">check</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<span class="font-body-md text-body-md text-on-surface peer-checked:text-on-surface-variant peer-checked:line-through transition-colors">
+                Does the system maintain an offline fallback mode?
+              </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Local small-language model or deterministic cache handles zero-network edge states.</p>
+</div>
+</label>
+<!-- Item A3 -->
+<label class="group flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-lowest shadow-sm active:scale-[0.99] transition cursor-pointer select-none">
+<div class="mt-0.5 relative flex items-center justify-center">
+<input class="resilience-check peer sr-only" data-pillar="A" type="checkbox"/>
+<div class="w-5 h-5 rounded-md bg-surface-container peer-checked:bg-primary transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-on-primary scale-0 peer-checked:scale-100 transition-transform">check</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<span class="font-body-md text-body-md text-on-surface peer-checked:text-on-surface-variant peer-checked:line-through transition-colors">
+                Can you swap model providers without updating more than one config file?
+              </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Decoupled adapters prevent catastrophic multi-vendor refactors.</p>
+</div>
+</label>
+</div>
+</section>
+<!-- Pillar B -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">database</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold tracking-wider uppercase">Pillar B</span>
+<h3 class="font-title-md text-title-md text-on-surface">Data Integrity &amp; Grounding</h3>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant pillar-count" data-pillar="B">1/2</span>
+</div>
+<div class="flex flex-col gap-2">
+<!-- Item B1 -->
+<label class="group flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-lowest shadow-sm active:scale-[0.99] transition cursor-pointer select-none">
+<div class="mt-0.5 relative flex items-center justify-center">
+<input checked="" class="resilience-check peer sr-only" data-pillar="B" type="checkbox"/>
+<div class="w-5 h-5 rounded-md bg-surface-container peer-checked:bg-primary transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-on-primary scale-0 peer-checked:scale-100 transition-transform">check</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<span class="font-body-md text-body-md text-on-surface peer-checked:text-on-surface-variant peer-checked:line-through transition-colors">
+                Are knowledge bases updated dynamically rather than hardcoded in system prompts?
+              </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">RAG or episodic vector memory prevents stale context contamination.</p>
+</div>
+</label>
+<!-- Item B2 -->
+<label class="group flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-lowest shadow-sm active:scale-[0.99] transition cursor-pointer select-none">
+<div class="mt-0.5 relative flex items-center justify-center">
+<input class="resilience-check peer sr-only" data-pillar="B" type="checkbox"/>
+<div class="w-5 h-5 rounded-md bg-surface-container peer-checked:bg-primary transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-on-primary scale-0 peer-checked:scale-100 transition-transform">check</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<span class="font-body-md text-body-md text-on-surface peer-checked:text-on-surface-variant peer-checked:line-through transition-colors">
+                Is there an automated hallucination confidence threshold?
+              </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Low-certainty inferences gracefully yield clarification cues rather than false assertions.</p>
+</div>
+</label>
+</div>
+</section>
+<!-- Pillar C -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold tracking-wider uppercase">Pillar C</span>
+<h3 class="font-title-md text-title-md text-on-surface">Ethics &amp; Longevity</h3>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant pillar-count" data-pillar="C">1/2</span>
+</div>
+<div class="flex flex-col gap-2">
+<!-- Item C1 -->
+<label class="group flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-lowest shadow-sm active:scale-[0.99] transition cursor-pointer select-none">
+<div class="mt-0.5 relative flex items-center justify-center">
+<input checked="" class="resilience-check peer sr-only" data-pillar="C" type="checkbox"/>
+<div class="w-5 h-5 rounded-md bg-surface-container peer-checked:bg-primary transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-on-primary scale-0 peer-checked:scale-100 transition-transform">check</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<span class="font-body-md text-body-md text-on-surface peer-checked:text-on-surface-variant peer-checked:line-through transition-colors">
+                Does user data remain self-sovereign with zero lock-in?
+              </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Complete JSON/Vector weights exportability guaranteed to students and builders.</p>
+</div>
+</label>
+<!-- Item C2 -->
+<label class="group flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-lowest shadow-sm active:scale-[0.99] transition cursor-pointer select-none">
+<div class="mt-0.5 relative flex items-center justify-center">
+<input class="resilience-check peer sr-only" data-pillar="C" type="checkbox"/>
+<div class="w-5 h-5 rounded-md bg-surface-container peer-checked:bg-primary transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-on-primary scale-0 peer-checked:scale-100 transition-transform">check</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<span class="font-body-md text-body-md text-on-surface peer-checked:text-on-surface-variant peer-checked:line-through transition-colors">
+                Are prompt injection tests automated across every code commit?
+              </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Continuous red-teaming pipeline detects jailbreaks and adversarial data exfiltration.</p>
+</div>
+</label>
+</div>
+</section>
+</div>
+<!-- PYF Mentor Micro Spotlight Card -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-full object-cover flex-shrink-0" data-alt="A portrait of an energetic young female technology mentor in modern university laboratory wearing smart minimalist teal knitwear and smiling warmly toward the camera." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxGdv3ihryxzCDFMUuPs-2TkHN-tPHxC8qdHCPxYbpmgm8tgRqf2PnSl9W3ENelTEzdb6d4o57pwwlsNg9rUBBWE3FbsmdAJ2KN4uQ6-m5hVtmRfsRlQGFxMSGUfDmvGldo0HzZweWhPmJ5Y8Upy1pH00uj93BgbnfLCMN5e3QgFCgjOCSDIjYvnus68Jh_2dHd7t3nHLDMrYrXPT9YyU8mPQERM1pDyEwOWLvGDpk"/>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface truncate">Dr. Aris Thorne</span>
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">stars</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">PYF Lead Evaluator • Quantum &amp; Safe AI</p>
+</div>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm active:scale-95 transition" id="btn-mentor-sync">
+        Sync
+      </button>
+</div>
+<!-- Primary Action Stack -->
+<div class="flex flex-col gap-2.5 pt-2">
+<button class="w-full py-3.5 px-space-lg rounded-full bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md active:scale-[0.98] transition" id="btn-export">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span>Export Resilience Report (PDF)</span>
+</button>
+<div class="grid grid-cols-2 gap-2.5">
+<button class="py-3 px-space-sm rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm active:scale-95 transition flex items-center justify-center gap-1.5" id="btn-reset">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">refresh</span>
+<span>Reset Checklist</span>
+</button>
+<button class="py-3 px-space-sm rounded-full bg-secondary-container/40 text-secondary font-label-md text-label-md active:scale-95 transition flex items-center justify-center gap-1.5" id="btn-share">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Share with PYF</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Feedback Toast -->
+<div class="fixed bottom-6 left-4 right-4 max-w-sm mx-auto bg-inverse-surface text-inverse-on-surface px-4 py-3 rounded-xl shadow-xl flex items-center gap-3 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none z-50" id="toast-banner">
+<span class="material-symbols-outlined text-[20px] text-inverse-primary" id="toast-icon">check_circle</span>
+<span class="font-body-sm text-body-sm flex-1" id="toast-text">Protocol status refreshed</span>
+</div>
+</div>
+<script>
+  (function() {
+    const checkboxes = document.querySelectorAll('.resilience-check');
+    const scorePercentage = document.getElementById('score-percentage');
+    const scoreStatus = document.getElementById('score-status');
+    const scoreDesc = document.getElementById('score-desc');
+    const gaugeCircle = document.getElementById('gauge-circle');
+    const linearGauge = document.getElementById('linear-gauge');
+    const checkedCounter = document.getElementById('checked-counter');
+    const gradeBadge = document.getElementById('grade-badge');
+    const tierPill = document.getElementById('tier-pill');
+    const toast = document.getElementById('toast-banner');
+    const toastText = document.getElementById('toast-text');
+    const toastIcon = document.getElementById('toast-icon');
+
+    const total = checkboxes.length;
+    const circumference = 2 * Math.PI * 40; // ~251.32
+
+    function showToast(msg, iconName = 'check_circle') {
+      if (!toast) return;
+      toastText.textContent = msg;
+      toastIcon.textContent = iconName;
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-24', 'opacity-0');
+      }, 2600);
+    }
+
+    function recalculate() {
+      let checked = 0;
+      checkboxes.forEach(cb => {
+        if (cb.checked) checked++;
+      });
+
+      const percentage = Math.round((checked / total) * 100);
+      scorePercentage.textContent = percentage + '%';
+      checkedCounter.textContent = `${checked} of ${total} Completed`;
+
+      // Update Gauge SVG Circle offset
+      const offset = circumference - (percentage / 100) * circumference;
+      gaugeCircle.style.strokeDashoffset = offset;
+      linearGauge.style.width = percentage + '%';
+
+      // Update Pillars breakdown
+      ['A', 'B', 'C'].forEach(pillar => {
+        const pillarCbs = document.querySelectorAll(`.resilience-check[data-pillar="${pillar}"]`);
+        const pTotal = pillarCbs.length;
+        let pChecked = 0;
+        pillarCbs.forEach(c => { if(c.checked) pChecked++; });
+        const counterEl = document.querySelector(`.pillar-count[data-pillar="${pillar}"]`);
+        if (counterEl) counterEl.textContent = `${pChecked}/${pTotal}`;
+      });
+
+      // Tiers logic
+      if (percentage >= 85) {
+        scoreStatus.textContent = '2050 Sovereign Ready';
+        scoreDesc.textContent = 'Exceptional resilience profile. Exceeds global decoupling and zero-lock-in benchmarks.';
+        gradeBadge.textContent = 'Grade A+';
+        gradeBadge.className = 'bg-secondary-container/40 px-2 py-0.5 rounded-full text-secondary font-bold';
+        tierPill.className = 'inline-block w-2.5 h-2.5 rounded-full bg-primary';
+      } else if (percentage >= 60) {
+        scoreStatus.textContent = 'High Resilience';
+        scoreDesc.textContent = 'Architecture shows decoupled resilience with high adaptability for 2050 agentic frameworks.';
+        gradeBadge.textContent = 'Grade A-';
+        gradeBadge.className = 'bg-secondary-container/40 px-2 py-0.5 rounded-full text-secondary font-bold';
+        tierPill.className = 'inline-block w-2.5 h-2.5 rounded-full bg-primary';
+      } else if (percentage >= 35) {
+        scoreStatus.textContent = 'Moderate Exposure';
+        scoreDesc.textContent = 'Significant architectural friction detected in model swapping and ungrounded fallbacks.';
+        gradeBadge.textContent = 'Grade B';
+        gradeBadge.className = 'bg-surface-container px-2 py-0.5 rounded-full text-on-surface-variant font-bold';
+        tierPill.className = 'inline-block w-2.5 h-2.5 rounded-full bg-outline';
+      } else {
+        scoreStatus.textContent = 'Vulnerable Blueprint';
+        scoreDesc.textContent = 'Critical risk of vendor lock-in, unmonitored hallucinations, and deployment failure.';
+        gradeBadge.textContent = 'Grade C';
+        gradeBadge.className = 'bg-error-container px-2 py-0.5 rounded-full text-on-error-container font-bold';
+        tierPill.className = 'inline-block w-2.5 h-2.5 rounded-full bg-error';
+      }
+    }
+
+    checkboxes.forEach(cb => {
+      cb.addEventListener('change', () => {
+        recalculate();
+      });
+    });
+
+    document.getElementById('btn-reset')?.addEventListener('click', () => {
+      checkboxes.forEach(cb => { cb.checked = false; });
+      recalculate();
+      showToast('Checklist cleared to baseline', 'restart_alt');
+    });
+
+    document.getElementById('btn-export')?.addEventListener('click', () => {
+      showToast('Compiling 2050 Resilience PDF Report...', 'picture_as_pdf');
+    });
+
+    document.getElementById('btn-share')?.addEventListener('click', () => {
+      showToast('Audit dossier sent to PYF Mentorship Board', 'send');
+    });
+
+    document.getElementById('btn-mentor-sync')?.addEventListener('click', () => {
+      showToast('Review session requested with Dr. Aris Thorne', 'mark_chat_unread');
+    });
+
+    // Initial render compute
+    recalculate();
+  })();
+</script></main></body></html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-container": "#f3fffc", "inverse-primary": "#6bd8cb", "secondary": "#006b5f", "on-background": "#131b2e", "on-secondary-fixed": "#00201c", "tertiary-fixed": "#9cf2e8", "primary-fixed-dim": "#6bd8cb", "surface-bright": "#faf8ff", "primary-container": "#008378", "on-tertiary": "#ffffff", "on-error-container": "#93000a", "on-secondary-container": "#006f64", "on-error": "#ffffff", "on-primary-fixed": "#00201d", "on-surface": "#131b2e", "surface-container-lowest": "#ffffff", "surface-container": "#eaedff", "background": "#faf8ff", "surface": "#faf8ff", "on-primary": "#ffffff", "primary": "#00685f", "surface-container-low": "#f2f3ff", "on-tertiary-fixed": "#00201d", "on-surface-variant": "#3d4947", "secondary-container": "#6df5e1", "primary-fixed": "#89f5e7", "inverse-surface": "#283044", "surface-container-highest": "#dae2fd", "surface-container-high": "#e2e7ff", "tertiary-fixed-dim": "#80d5cb", "inverse-on-surface": "#eef0ff", "surface-dim": "#d2d9f4", "on-primary-fixed-variant": "#005049", "surface-tint": "#006a61", "tertiary": "#006860", "on-primary-container": "#f4fffc", "on-secondary-fixed-variant": "#005048", "on-tertiary-fixed-variant": "#00504a", "surface-variant": "#dae2fd", "secondary-fixed": "#71f8e4", "on-secondary": "#ffffff", "tertiary-container": "#248279", "error": "#ba1a1a", "outline-variant": "#bcc9c6", "error-container": "#ffdad6", "outline": "#6d7a77", "secondary-fixed-dim": "#4fdbc8" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "1rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-md": "1rem", "margin": "3rem", "margin-mobile": "1.25rem", "gutter": "1.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem" }, fontFamily: { "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-xl": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "display-xl-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] }, fontSize: { "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "display-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-xl-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;background-color:#faf8ff;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><button class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface active:scale-95 transition-transform" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Future Proof AI Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WkXhi84BcE0LhQ0i2FhhZ1rnJu57baNUXWyHclJEpvxSOYKyfY4kJwZ7vMbcFRqm6eLlai49KZrM64jhwaO-UG6rwWFW-RdvcDYROt3p-ek0GyeGThKC03wKG2HKhNynz97aT7cIET5xdj-IB63SFQA3ezPgiAPmq_qSxMWBBMcEIsDJNIdfNjGpSZba4XyPPPK6cKLGObm9EDXZPRpV4owKuHEawQEnxAIPWiedGVhw"/><h1 class="font-title-md text-title-md text-on-surface tracking-tight truncate max-w-[140px]">Knowledge Faq</h1></div><div class="flex items-center gap-space-sm"><div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/25 text-secondary font-label-sm text-label-sm"><span>2050</span></div><button class="w-11 h-11 flex items-center justify-center rounded-full active:scale-95 transition-transform"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANtuCfCYViiRTXXQSvc44e24LbWQYv2wuVVBhrodrCLm-1xeKQxX4_nXUR08M_GeNs1neSCzlrwqNILcV3pI_65OzR4RjVG_F2jD9ZiR253YxRUGtTxlHJp3fMGKrjGxXEYfsVK1axyv5UYm_QWsDOTpxMj5wa3UVe5JC4O2Uhjg_hxb_3UHeNVk-6e_uUrShhAWrTTK2uHUfBYGP6QzrdFN-auty7yMShkuvA2H0q"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full px-gutter-mobile pb-space-xl">
+<!-- Atmospheric Ambient Glow Layer -->
+<div class="relative w-full overflow-hidden pt-space-md pb-space-lg">
+<div class="absolute -top-12 -left-10 w-44 h-44 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute top-8 -right-8 w-40 h-40 rounded-full bg-primary-fixed/25 blur-3xl pointer-events-none"></div>
+<!-- Header Section (No redundant H1, warm framing) -->
+<div class="relative flex flex-col gap-space-xs mb-space-md">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high w-fit shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Builder Field Guide • 2050</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">
+        Questions People Actually Ask
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Straightforward answers for curious students, teachers, and young builders.
+      </p>
+</div>
+<!-- Interactive Search & Live Filter Bar -->
+<div class="relative w-full mb-space-lg">
+<div class="relative flex items-center bg-surface-container-lowest rounded-xl shadow-sm transition-all focus-within:shadow-md">
+<span class="material-symbols-outlined text-outline ml-3.5 text-[22px] pointer-events-none">search</span>
+<input class="w-full py-3.5 pl-2.5 pr-10 bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none" id="faqSearchInput" placeholder="Search topics (e.g. models, hardware, career)..." type="text"/>
+<button class="hidden absolute right-3 w-7 h-7 flex items-center justify-center rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface text-sm transition-all" id="clearSearchBtn" onclick="resetSearch()">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<!-- Quick Topic Tags -->
+<div class="flex items-center gap-2 mt-space-sm overflow-x-auto pb-1 scrollbar-none">
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">Popular:</span>
+<button class="shrink-0 px-3 py-1 rounded-full bg-surface-container font-label-md text-label-md text-secondary hover:bg-secondary-container/40 active:scale-95 transition-all" onclick="setQuery('Architecture')">
+          #Architecture
+        </button>
+<button class="shrink-0 px-3 py-1 rounded-full bg-surface-container font-label-md text-label-md text-secondary hover:bg-secondary-container/40 active:scale-95 transition-all" onclick="setQuery('Careers')">
+          #Careers
+        </button>
+<button class="shrink-0 px-3 py-1 rounded-full bg-surface-container font-label-md text-label-md text-secondary hover:bg-secondary-container/40 active:scale-95 transition-all" onclick="setQuery('Free Grant')">
+          #PYF Grant
+        </button>
+<button class="shrink-0 px-3 py-1 rounded-full bg-surface-container font-label-md text-label-md text-secondary hover:bg-secondary-container/40 active:scale-95 transition-all" onclick="setQuery('Coding')">
+          #Ethics
+        </button>
+</div>
+</div>
+<!-- FAQ Accordion Container -->
+<div class="flex flex-col gap-space-sm" id="faqList">
+<!-- Item 1 -->
+<div class="faq-card bg-surface-container-lowest rounded-xl shadow-sm transition-all overflow-hidden" data-keywords="programming languages 2050 code syntax architecture modularity python rust">
+<button class="w-full p-space-md flex items-start justify-between gap-space-sm text-left" onclick="toggleFaq(this)">
+<div class="flex items-start gap-space-sm">
+<span class="flex-shrink-0 w-8 h-8 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center font-label-md text-label-md font-bold mt-0.5">
+              01
+            </span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">
+              Will current AI programming languages still exist in 2050?
+            </span>
+</div>
+<span class="faq-icon material-symbols-outlined text-outline text-[22px] transition-transform duration-300">
+            expand_more
+          </span>
+</button>
+<div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-out px-space-md">
+<div class="pt-1 pb-space-md pl-11 text-on-surface-variant font-body-md text-body-md flex flex-col gap-2">
+<p>Core principles like modularity, state management, and algorithmic math will outlast any syntax. Master the architecture, not the syntax.</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary bg-surface-container-low px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[13px]">lightbulb</span> Durable Concept: State Machines
+              </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="faq-card bg-surface-container-lowest rounded-xl shadow-sm transition-all overflow-hidden" data-keywords="high school college prepare 2050 jobs students youth career prompt engineering system design ethics empathy">
+<button class="w-full p-space-md flex items-start justify-between gap-space-sm text-left" onclick="toggleFaq(this)">
+<div class="flex items-start gap-space-sm">
+<span class="flex-shrink-0 w-8 h-8 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center font-label-md text-label-md font-bold mt-0.5">
+              02
+            </span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">
+              How can high school and college students prepare for 2050 AI jobs today?
+            </span>
+</div>
+<span class="faq-icon material-symbols-outlined text-outline text-[22px] transition-transform duration-300">
+            expand_more
+          </span>
+</button>
+<div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-out px-space-md">
+<div class="pt-1 pb-space-md pl-11 text-on-surface-variant font-body-md text-body-md flex flex-col gap-2">
+<p>Focus on system design, ethics, human empathy, and domain knowledge. Prompting is a temporary skill; critical systems thinking is timeless.</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary bg-surface-container-low px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[13px]">psychology</span> First Principles &gt; Tool Mastery
+              </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="faq-card bg-surface-container-lowest rounded-xl shadow-sm transition-all overflow-hidden" data-keywords="ai surpasses human coders before 2030 agi architect govern steering intelligence verify">
+<button class="w-full p-space-md flex items-start justify-between gap-space-sm text-left" onclick="toggleFaq(this)">
+<div class="flex items-start gap-space-sm">
+<span class="flex-shrink-0 w-8 h-8 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center font-label-md text-label-md font-bold mt-0.5">
+              03
+            </span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">
+              What if AI surpasses human coders before 2030?
+            </span>
+</div>
+<span class="faq-icon material-symbols-outlined text-outline text-[22px] transition-transform duration-300">
+            expand_more
+          </span>
+</button>
+<div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-out px-space-md">
+<div class="pt-1 pb-space-md pl-11 text-on-surface-variant font-body-md text-body-md flex flex-col gap-2">
+<p>You become the architect and governor. Building future-proof AI means learning how to supervise, verify, and steer intelligence.</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary bg-surface-container-low px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[13px]">verified_user</span> Human-in-the-Loop Governance
+              </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="faq-card bg-surface-container-lowest rounded-xl shadow-sm transition-all overflow-hidden" data-keywords="free pyf students grant community cost tuition money non-profit equity">
+<button class="w-full p-space-md flex items-start justify-between gap-space-sm text-left" onclick="toggleFaq(this)">
+<div class="flex items-start gap-space-sm">
+<span class="flex-shrink-0 w-8 h-8 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center font-label-md text-label-md font-bold mt-0.5">
+              04
+            </span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">
+              How is Future Proof AI free for PYF students?
+            </span>
+</div>
+<span class="faq-icon material-symbols-outlined text-outline text-[22px] transition-transform duration-300">
+            expand_more
+          </span>
+</button>
+<div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-out px-space-md">
+<div class="pt-1 pb-space-md pl-11 text-on-surface-variant font-body-md text-body-md flex flex-col gap-2">
+<p>Supported by open-source community grants and mentorship initiatives committed to youth equity in AI.</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary bg-surface-container-low px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[13px]">volunteer_activism</span> 100% Endowed &amp; Public Interest
+              </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Empty State for Search -->
+<div class="hidden flex-col items-center justify-center py-space-xl text-center bg-surface-container-lowest rounded-xl p-space-lg shadow-sm mt-space-sm" id="emptyFaqState">
+<div class="w-14 h-14 rounded-full bg-surface-container flex items-center justify-center text-secondary mb-space-sm">
+<span class="material-symbols-outlined text-[28px]">search_off</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold mb-1">No questions found yet</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mb-space-md">Try searching for terms like "career", "languages", or submit your curiosity to the mentor lounge!</p>
+<button class="px-4 py-2 rounded-full bg-secondary-container text-on-secondary-fixed font-label-md text-label-md font-semibold active:scale-95 transition-transform" onclick="resetSearch()">
+        View all questions
+      </button>
+</div>
+<!-- Student Community Pulse Bento -->
+<div class="mt-space-xl grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-lg bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</span>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container/40 px-2 py-0.5 rounded-full">Active</span>
+</div>
+<div class="mt-space-md">
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">14,200+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">PYF builders across 62 countries</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-lg bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+</span>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container/40 px-2 py-0.5 rounded-full">Open Source</span>
+</div>
+<div class="mt-space-md">
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">890+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Student projects verified for 2050</div>
+</div>
+</div>
+</div>
+<!-- "Stay Ahead of the Curve" Newsletter Card -->
+<div class="mt-space-lg bg-surface-container-high rounded-xl p-space-lg shadow-sm relative overflow-hidden">
+<div class="absolute -right-10 -bottom-10 w-36 h-36 rounded-full bg-secondary-container/30 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-lowest text-secondary font-label-sm text-label-sm w-fit font-medium">
+<span class="material-symbols-outlined text-[15px]">send_time_extension</span> Weekly Dispatch
+        </div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">
+          Stay Ahead of the Curve
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Weekly deep-dives into core AI systems, hardware frontiers, and interview prompts. Zero spam, pure craft.
+        </p>
+<form class="mt-space-sm flex flex-col gap-space-xs" id="subscribeForm" onsubmit="handleSubscribe(event)">
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container-lowest py-3 pl-3.5 pr-28 rounded-full font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none shadow-sm" id="studentEmailInput" placeholder="Enter your student email..." required="" type="email"/>
+<button class="absolute right-1 px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold active:scale-95 transition-transform flex items-center gap-1 shadow-sm" type="submit">
+<span>Join</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<div class="hidden items-center gap-1.5 text-secondary font-label-sm text-label-sm mt-1" id="subscribeSuccessMsg">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> You're in! Check your inbox for the 2050 Architecture Primer.
+          </div>
+</form>
+</div>
+</div>
+<!-- Personal Warm Founder Note: "Why I Made This" -->
+<div class="mt-space-lg bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center gap-space-sm mb-space-sm">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm" data-alt="Intimate, warm photographic portrait of an optimistic young software engineer founder smiling gently in a sunlit tech laboratory filled with plants and warm paper sketches, soft teal ambience, cinematic clean natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAddNdLFxZwfWTz8hOfqQf8b5VBeow5tlpk55RCry5elu8yERH0r6EEAKmNYYUynpk1rrWAeaxyyxCJaC7E0D7Qz5JBudoyc38twIDKjt2Vc-s_Lu57SM6FECjUj_wout56dAibPKQV_7P5zmOUjs23kzKD0zn9nMcKxA1WebcnA6o819npTQ_lkZ3C77yiBhwASRTblByvK2XiXrjt4YI_Lu6eWDqCWyJgHKy2lMHc"/>
+<div class="flex flex-col">
+<h4 class="font-title-md text-title-md text-on-surface font-bold leading-tight">Why I Made This</h4>
+<span class="font-label-sm text-label-sm text-secondary">A note from Maya • PYF Core Steward</span>
+</div>
+</div>
+<div class="font-body-md text-body-md text-on-surface-variant flex flex-col gap-space-sm">
+<p>
+          I started coding when tutorials promised that learning one specific JavaScript framework would guarantee a lifelong career. Ten years later, that framework is history.
+        </p>
+<p>
+          Too much current AI discourse is sensationalist noise designed to make students anxious about obsolescence. I created Future Proof AI with the PYF team because durable engineering isn't about chasing the weekly shiny model—it is about mathematical clarity, systems empathy, and the quiet joy of understanding how machines truly think.
+        </p>
+<div class="pt-2 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline italic">Crafted with hope for generation 2050.</span>
+<img class="h-6 w-24 object-contain opacity-70" data-alt="Delicate, minimalist digital signature stroke drawn in subtle teal ink on a transparent soft background, authentic hand-written feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmM15a8thkPi63brS_Ez2HOCuTKTFr3sLT-_ifVd7bF8JGeEN2VQNAsz9NbE4RUG0cRtFs8l40cxd5CTdVQZbJx0UbzxMz_WbW1BDgnNjLV3GHAYROhzdFuEH5EkLBwG8D7UvNml7HG_0Pp1C1CyoDcow9c_N-zPD5VGofSpaOnAVwpjd2F9PIR-wJ-5pdZh_ualOq7XZtJKAnZ0TKb6cIqwnhcjoju7d06mGdca0M"/>
+</div>
+</div>
+</div>
+<!-- Community Hub & Ecosystem Footer -->
+<div class="mt-space-xl pt-space-md flex flex-col items-center text-center gap-space-md">
+<!-- Community Channels Bar -->
+<div class="flex items-center justify-center gap-space-sm w-full">
+<a class="flex-1 py-3 px-2 bg-surface-container-lowest rounded-xl shadow-sm flex flex-col items-center gap-1 active:scale-95 transition-transform text-on-surface" href="#discord">
+<span class="material-symbols-outlined text-secondary text-[22px]">forum</span>
+<span class="font-label-sm text-label-sm font-semibold">Discord Hub</span>
+</a>
+<a class="flex-1 py-3 px-2 bg-surface-container-lowest rounded-xl shadow-sm flex flex-col items-center gap-1 active:scale-95 transition-transform text-on-surface" href="#github">
+<span class="material-symbols-outlined text-secondary text-[22px]">code</span>
+<span class="font-label-sm text-label-sm font-semibold">Open Source</span>
+</a>
+<a class="flex-1 py-3 px-2 bg-surface-container-lowest rounded-xl shadow-sm flex flex-col items-center gap-1 active:scale-95 transition-transform text-on-surface" href="#mentors">
+<span class="material-symbols-outlined text-secondary text-[22px]">handshake</span>
+<span class="font-label-sm text-label-sm font-semibold">Mentors</span>
+</a>
+</div>
+<!-- Affirmation & Foundation Statement -->
+<div class="flex flex-col items-center gap-1 max-w-xs mt-space-xs">
+<div class="w-8 h-8 rounded-full bg-secondary-container/30 flex items-center justify-center text-secondary mb-1">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Supported by the Public Youth Foundation. Free forever for students, educators, and community builders.
+        </p>
+<span class="font-label-sm text-label-sm text-outline mt-1">© 2050 Architecture Collective • Version 3.4.1</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function toggleFaq(btn) {
+    const card = btn.closest('.faq-card');
+    const content = card.querySelector('.faq-content');
+    const icon = card.querySelector('.faq-icon');
+    const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+
+    // Close all other accordions for neatness
+    document.querySelectorAll('.faq-card').forEach(otherCard => {
+      if (otherCard !== card) {
+        const otherContent = otherCard.querySelector('.faq-content');
+        const otherIcon = otherCard.querySelector('.faq-icon');
+        if (otherContent) otherContent.style.maxHeight = '0px';
+        if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
+      }
+    });
+
+    if (isOpen) {
+      content.style.maxHeight = '0px';
+      icon.style.transform = 'rotate(0deg)';
+    } else {
+      content.style.maxHeight = content.scrollHeight + 'px';
+      icon.style.transform = 'rotate(180deg)';
+    }
+  }
+
+  const searchInput = document.getElementById('faqSearchInput');
+  const clearBtn = document.getElementById('clearSearchBtn');
+  const emptyState = document.getElementById('emptyFaqState');
+
+  if (searchInput) {
+    searchInput.addEventListener('input', function(e) {
+      const term = e.target.value.toLowerCase().trim();
+      filterCards(term);
+    });
+  }
+
+  function filterCards(term) {
+    const cards = document.querySelectorAll('.faq-card');
+    let visibleCount = 0;
+
+    if (term.length > 0) {
+      clearBtn.classList.remove('hidden');
+    } else {
+      clearBtn.classList.add('hidden');
+    }
+
+    cards.forEach(card => {
+      const text = card.textContent.toLowerCase();
+      const keywords = card.getAttribute('data-keywords') || '';
+      if (text.includes(term) || keywords.toLowerCase().includes(term)) {
+        card.style.display = 'block';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    if (visibleCount === 0) {
+      emptyState.classList.remove('hidden');
+      emptyState.classList.add('flex');
+    } else {
+      emptyState.classList.add('hidden');
+      emptyState.classList.remove('flex');
+    }
+  }
+
+  function setQuery(term) {
+    if (searchInput) {
+      searchInput.value = term;
+      filterCards(term.toLowerCase());
+      searchInput.focus();
+    }
+  }
+
+  function resetSearch() {
+    if (searchInput) {
+      searchInput.value = '';
+      filterCards('');
+    }
+  }
+
+  function handleSubscribe(e) {
+    e.preventDefault();
+    const successMsg = document.getElementById('subscribeSuccessMsg');
+    const input = document.getElementById('studentEmailInput');
+    if (input && input.value) {
+      input.disabled = true;
+      successMsg.classList.remove('hidden');
+      successMsg.classList.add('flex');
+    }
+  }
+</script></main></body></html>

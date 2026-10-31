@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Outfit:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#11131d;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-low": "#191b26", "on-tertiary-container": "#006d4a", "primary-fixed-dim": "#00dbe9", "primary-container": "#00f0ff", "on-error": "#690005", "outline": "#849495", "on-primary-container": "#006970", "on-tertiary": "#003824", "on-tertiary-fixed": "#002113", "error-container": "#93000a", "on-primary-fixed-variant": "#004f54", "background": "#11131d", "on-surface-variant": "#b9cacb", "surface-container-lowest": "#0b0e18", "tertiary-fixed-dim": "#4edea3", "on-primary": "#00363a", "inverse-on-surface": "#2e303b", "on-primary-fixed": "#002022", "inverse-primary": "#006970", "primary": "#dbfcff", "outline-variant": "#3b494b", "on-secondary-fixed-variant": "#5700c9", "tertiary-fixed": "#6ffbbe", "surface-variant": "#323440", "secondary-container": "#7000ff", "surface-container": "#1d1f2a", "on-secondary": "#3c0090", "secondary-fixed-dim": "#d1bcff", "surface": "#11131d", "primary-fixed": "#7df4ff", "error": "#ffb4ab", "on-surface": "#e1e1f1", "on-background": "#e1e1f1", "tertiary-container": "#65f2b5", "surface-container-high": "#272935", "on-error-container": "#ffdad6", "on-tertiary-fixed-variant": "#005236", "surface-bright": "#373944", "secondary": "#d1bcff", "on-secondary-container": "#ddcdff", "surface-container-highest": "#323440", "surface-dim": "#11131d", "surface-tint": "#00dbe9", "on-secondary-fixed": "#23005b", "inverse-surface": "#e1e1f1", "secondary-fixed": "#e9ddff", "tertiary": "#d8ffe7" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "space-md": "1rem", "gutter": "1.5rem", "space-xs": "0.25rem", "gutter-mobile": "0.75rem", "space-lg": "1.5rem", "margin": "3rem", "space-xl": "2.5rem", "margin-mobile": "1rem" }, fontFamily: { "display-xl": ["Space Grotesk"], "body-lg": ["Outfit"], "body-md": ["Outfit"], "body-sm": ["Outfit"], "label-mono-lg": ["JetBrains Mono"], "headline-md": ["Space Grotesk"], "display-xl-mobile": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "headline-lg": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"], "label-mono-sm": ["JetBrains Mono"] }, fontSize: { "display-xl": ["56px", { lineHeight: "64px", letterSpacing: "-0.02em", fontWeight: "700" }], "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "0.01em", fontWeight: "400" }], "body-md": ["15px", { lineHeight: "24px", letterSpacing: "0.01em", fontWeight: "400" }], "body-sm": ["13px", { lineHeight: "20px", letterSpacing: "0.015em", fontWeight: "400" }], "label-mono-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.04em", fontWeight: "500" }], "headline-md": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "600" }], "display-xl-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.01em", fontWeight: "700" }], "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "600" }], "headline-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.015em", fontWeight: "700" }], "headline-lg-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "600" }], "label-mono-sm": ["11px", { lineHeight: "16px", letterSpacing: "0.06em", fontWeight: "500" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_4px_24px_rgba(0,0,0,0.6)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="PATHFINDER AI Quantum Compass Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1W0isUvUd0Akx4M0sg21R7CLfh4BfB14xJF9unbW8ZC8VwkQiEaacSD9g5kC_n-WjPLHPU0b_WPjhc1A4qSFK84r-U7ZpcNQ81KqGmg9rAXvvS93OymZAZUlESez8M9706pFYpgxrg0u_T7UHrKmB4ofkOAipBl-UlCxw4h2LynRHRTNcaB44b5pvpbiEpO6MsNbO9b7eq6yw8Nm2da4rzxbfsDusmYQPdI5JYWDCSS"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight truncate">PATHFINDER AI</span><span class="font-label-mono-sm text-label-mono-sm px-1.5 py-0.5 rounded bg-surface-container text-primary-fixed-dim">2050</span></div><div class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim animate-pulse shadow-[0_0_8px_#4edea3]"></span><span class="font-label-mono-sm text-[10px] tracking-wider text-tertiary-fixed-dim font-medium uppercase">QUANTUM ONLINE</span><span class="font-label-mono-sm text-[10px] text-outline-variant">•</span><span class="font-body-sm text-[11px] text-on-surface-variant truncate">Explorer</span></div></div></div><div class="flex items-center gap-space-xs shrink-0"><div class="flex flex-col items-end"><span class="font-label-mono-sm text-[9px] uppercase tracking-wider text-secondary">LVL 04</span><span class="font-label-mono-sm text-[8px] uppercase tracking-widest text-outline">EXPLORER</span></div><div class="relative p-0.5 rounded-full bg-gradient-to-tr from-secondary-container to-primary-container"><img alt="Profile" class="w-8 h-8 rounded-full object-cover block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClJUnHWpwHKmJGSZy9XzH9CrP9xytng4l7D6Rdxc-0nOySpvE3trP_GLzDDIjvH46Cw4GnUW71erCccRe1_DwDH0f81EQ4GrURbZPFXN5ZFxD3jYAeKXmMUTiY7bG9nO4MhDOI3y9ecIEN1-CmemhbOExXA_izKLG1ZBaqxgz8Um-NDLI0CTU4fNKwqvSEXt_3w4-Y6eXpJLL2NW9sr9JYdH2gID85KJxuNjOh6o4"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-tertiary-container shadow-[0_0_6px_#65f2b5]"></span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin-mobile pb-space-xl">
+<!-- Interactive Ambient HUD Particles / Canvas -->
+<div class="relative w-full overflow-hidden rounded-xl bg-surface-container-lowest p-space-md mb-space-lg shadow-xl">
+<div class="absolute -right-8 -top-8 w-44 h-44 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-10 bottom-0 w-36 h-36 rounded-full bg-primary-container/15 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim animate-ping"></span>
+<span class="font-label-mono-sm text-label-mono-sm text-tertiary-fixed-dim tracking-widest uppercase">QUANTUM MATCH ENGINE • V4.9</span>
+</div>
+<div class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-primary-fixed-dim">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+<span class="font-label-mono-sm text-[10px]">98.4% SYNC</span>
+</div>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight mt-1">
+        EXPLORE YOUR FUTURE CAREER
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Discover Possibilities Beyond the Ordinary. Calibrate personal telemetry against year 2050 frontier demands.
+      </p>
+<!-- Search Box (Cyber HUD Input) -->
+<div class="mt-space-sm relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-primary-fixed-dim text-[20px] pointer-events-none">radar</span>
+<input class="w-full pl-10 pr-10 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-high shadow-md transition-all" id="careerSearchInput" placeholder="Search 120+ frontier 2050 professions or skills..." type="text"/>
+<button class="absolute right-2.5 p-1 text-on-surface-variant hover:text-primary transition-colors" title="Voice / Neural Input">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+</div>
+<!-- Cyber Filter Chips -->
+<div class="flex gap-2 overflow-x-auto pt-2 pb-1 no-scrollbar text-nowrap" id="filterChipContainer">
+<button class="filter-chip active px-3 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-mono-sm text-label-mono-sm flex items-center gap-1 shadow-sm" data-filter="all">
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary-container"></span>
+          All Frontier Fields
+        </button>
+<button class="filter-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-primary font-label-mono-sm text-label-mono-sm flex items-center gap-1" data-filter="high-demand">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+          High Demand 2050
+        </button>
+<button class="filter-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-primary font-label-mono-sm text-label-mono-sm flex items-center gap-1" data-filter="no-code">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          No Code Required
+        </button>
+<button class="filter-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-primary font-label-mono-sm text-label-mono-sm flex items-center gap-1" data-filter="space-quantum">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>
+          Space &amp; Quantum
+        </button>
+</div>
+</div>
+</div>
+<!-- Interactive Youth Telemetry / Radar Matrix Ribbon -->
+<div class="mb-space-lg p-space-md rounded-xl bg-surface-container-low shadow-lg flex flex-col gap-space-sm relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">radar</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Neural Match Vector</span>
+</div>
+<button class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-mono-sm text-label-mono-sm flex items-center gap-1 hover:brightness-110 transition-all" id="toggleRadarMatrixBtn">
+<span class="material-symbols-outlined text-[16px]">compare_arrows</span>
+<span>Compare Pathways</span>
+</button>
+</div>
+<!-- Collapsible Mini Radar Matrix Info -->
+<div class="flex flex-col gap-space-xs transition-all duration-300" id="radarMatrixDrawer">
+<div class="flex items-center justify-between text-on-surface-variant font-label-mono-sm text-label-mono-sm">
+<span>ASSESSMENT PROFILE: LEVEL 04 EXPLORER</span>
+<span class="text-tertiary-fixed-dim font-bold">SYNAPSE COMPATIBILITY: 94.8%</span>
+</div>
+<!-- Compact Telemetry Match Bars -->
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<div class="bg-surface-container p-space-xs rounded flex flex-col gap-1">
+<div class="flex justify-between items-center text-[10px] font-label-mono-sm text-outline">
+<span>COGNITIVE FLEXIBILITY</span>
+<span class="text-primary-container">97%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full w-[97%]"></div>
+</div>
+</div>
+<div class="bg-surface-container p-space-xs rounded flex flex-col gap-1">
+<div class="flex justify-between items-center text-[10px] font-label-mono-sm text-outline">
+<span>SYNTHETIC BIO SYNERGY</span>
+<span class="text-tertiary-fixed-dim">89%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary-fixed-dim h-full rounded-full w-[89%]"></div>
+</div>
+</div>
+<div class="bg-surface-container p-space-xs rounded flex flex-col gap-1">
+<div class="flex justify-between items-center text-[10px] font-label-mono-sm text-outline">
+<span>SPATIAL REASONING</span>
+<span class="text-secondary">92%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[92%]"></div>
+</div>
+</div>
+<div class="bg-surface-container p-space-xs rounded flex flex-col gap-1">
+<div class="flex justify-between items-center text-[10px] font-label-mono-sm text-outline">
+<span>QUANTUM INTUITION</span>
+<span class="text-primary-fixed-dim">84%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-fixed-dim h-full rounded-full w-[84%]"></div>
+</div>
+</div>
+</div>
+<p class="font-body-sm text-[12px] text-outline pt-1">
+        Matches dynamically synthesized from your Page 1 Cognitive Resonance telemetry and frontier planetary skill requirements.
+      </p>
+</div>
+</div>
+<!-- Frontier Careers Stream -->
+<div class="flex flex-col gap-space-md" id="careerCardsContainer">
+<!-- CARD 1: AI & Data Science -->
+<article class="career-card group relative bg-surface-container-low rounded-xl p-space-md shadow-xl overflow-hidden flex flex-col gap-space-sm" data-category="high-demand space-quantum">
+<div class="absolute -right-12 -top-12 w-32 h-32 rounded-full bg-primary-container/10 blur-2xl group-hover:bg-primary-container/20 transition-all"></div>
+<!-- Top Badges / Index -->
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-container/15 text-primary">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-mono-sm text-[10px] font-semibold tracking-wider">⚡ 99.2% GROWTH INDEX • HIGH URGENCY</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">MATCH 97.4%</span>
+</div>
+<!-- Visual Spotlight Anchor -->
+<div class="relative w-full h-32 rounded-lg overflow-hidden bg-surface-container-highest mt-1">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Futuristic holographic laboratory showcasing quantum neural networks, brilliant cyan synaptic light filaments, sentient autonomous synthetic data nodes floating in obsidian space, highly detailed 2050 career visualization in teal and deep violet." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuP_mQ01AOuWBmSezgAKAaaVcXn23816BICIyeZQXXpJeHv6cPmU0hKVKTWrTW9cTQaWrF35vP-NdCgiPAPqL2v_S9C4iSHEZJ6sxAl9TtuOx_nWnpHja0uBgxOzD2vH5BHqL3GbMjlqkPQJGLt3eu0LL_yjwfVIdPATPlxrO04ooCuV63rjrju2QOK-aMvbVFZFgXSyIzPZDlJas70zJ1SzOZuALKGjrNoapWw6I"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/40 to-transparent"></div>
+<div class="absolute bottom-2 left-2 flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded text-[11px] font-label-mono-sm text-primary">
+<span class="material-symbols-outlined text-[14px]">psychology_alt</span>
+          AI &amp; DATA SCIENCE
+        </div>
+</div>
+<!-- Title & Role -->
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">
+          Autonomous AI Systems Architect &amp; Neural Prompt Engineer
+        </h2>
+<div class="flex items-center justify-between text-outline font-label-mono-sm text-label-mono-sm mt-1">
+<span>EST. COMPENSATION (2050):</span>
+<span class="text-tertiary-fixed-dim font-bold">290K – 460K Q-CREDITS</span>
+</div>
+</div>
+<!-- Core Skills Chips -->
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono-sm text-[11px]">PyTorch 2050</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono-sm text-[11px]">Cognitive Robotics</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono-sm text-[11px]">Quantum Algorithms</span>
+</div>
+<!-- 2050 Planetary Impact -->
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Designing sentient agent swarms that cure diseases and dynamically optimize planetary resource distribution.
+      </p>
+<!-- Action Cluster -->
+<div class="pt-space-xs flex items-center gap-space-xs">
+<button class="flex-1 py-2.5 px-3 rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-[14px] font-bold flex items-center justify-center gap-1.5 shadow-md active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+          Simulate Career Track
+        </button>
+<button class="gemini-trigger p-2.5 rounded-lg bg-surface-container text-secondary hover:text-primary active:scale-95 transition-all flex items-center justify-center" title="Ask Gemini AI About This Field">
+<span class="material-symbols-outlined text-[20px]">neurology</span>
+</button>
+</div>
+</article>
+<!-- CARD 2: Cybersecurity & Digital Technology -->
+<article class="career-card group relative bg-surface-container-low rounded-xl p-space-md shadow-xl overflow-hidden flex flex-col gap-space-sm" data-category="high-demand space-quantum">
+<div class="absolute -right-12 -top-12 w-32 h-32 rounded-full bg-secondary-container/15 blur-2xl group-hover:bg-secondary-container/25 transition-all"></div>
+<!-- Top Badges / Index -->
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/20 text-secondary">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-mono-sm text-[10px] font-semibold tracking-wider">🔒 QUANTUM-RESISTANT PROTOCOL</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-primary-fixed-dim">MATCH 91.2%</span>
+</div>
+<!-- Visual Spotlight Anchor -->
+<div class="relative w-full h-32 rounded-lg overflow-hidden bg-surface-container-highest mt-1">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Ultra-secure crystalline data core with violet laser lattice defense shielding, cyber security interface in dark obsidian space, holographic firewall geometry, illuminated in electric purple and hyper-cyan neon accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyOSYRW270r4FdDrw6-R_bc2CxbmrlhlLykzpGaej11c93JeXx2V1Lz0DqmgmxbQsN4nsP0DnscJMJQubnAuEhGbFThi9VM7_V2Zjzs_K6If4t_eLqWlKDSNLm_qN1a05K4U7jo2F118GSig96v7-4akOQmYuIPTxUYjxz5fBkNf2rPdYi9ps6vLOoEywXB-iGW1AqAOV4fGhBGc8RpWvJtGjdXL_g2zKNeYKs-bE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/40 to-transparent"></div>
+<div class="absolute bottom-2 left-2 flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded text-[11px] font-label-mono-sm text-secondary">
+<span class="material-symbols-outlined text-[14px]">shield_lock</span>
+          CYBERSECURITY &amp; TECH
+        </div>
+</div>
+<!-- Title & Role -->
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">
+          Zero-Trust Quantum Cryptographer &amp; Neural Firewall Warden
+        </h2>
+<div class="flex items-center justify-between text-outline font-label-mono-sm text-label-mono-sm mt-1">
+<span>EST. COMPENSATION (2050):</span>
+<span class="text-tertiary-fixed-dim font-bold">310K – 520K Q-CREDITS</span>
+</div>
+</div>
+<!-- Core Skills Chips -->
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono-sm text-[11px]">Post-Quantum Crypto</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono-sm text-[11px]">Biometric Mesh</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono-sm text-[11px]">Holographic Forensics</span>
+</div>
+<!-- Planetary Impact -->
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Guarding inter-planetary neural communication networks against rogue synthetic sentience incursions.
+      </p>
+<!-- Action Cluster -->
+<div class="pt-space-xs flex items-center gap-space-xs">
+<button class="flex-1 py-2.5 px-3 rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-[14px] font-bold flex items-center justify-center gap-1.5 shadow-md active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+          Simulate Career Track
+        </button>
+<button class="gemini-trigger p-2.5 rounded-lg bg-surface-container text-secondary hover:text-primary active:scale-95 transition-all flex items-center justify-center" title="Ask Gemini AI About This Field">
+<span class="material-symbols-outlined text-[20px]">neurology</span>
+</button>
+</div>
+</article>
+<!-- CARD 3: Healthcare & Biotechnology -->
+<article class="career-card group relative bg-surface-container-low rounded-xl p-space-md shadow-xl overflow-hidden flex flex-col gap-space-sm" data-category="high-demand">
+<div class="absolute -right-12 -top-12 w-32 h-32 rounded-full bg-tertiary-container/15 blur-2xl group-hover:bg-tertiary-container/25 transition-all"></div>
+<!-- Top Badges / Index -->
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-container/20 text-tertiary-fixed-dim">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-label-mono-sm text-[10px] font-semibold tracking-wider">🧬 GENETIC SYNTHESIS FRONTIER</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-tertiary-fixed">MATCH 88.7%</span>
+</div>
+<!-- Visual Spotlight Anchor -->
+<div class="relative w-full h-32 rounded-lg overflow-hidden bg-surface-container-highest mt-1">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Futuristic bionic biotechnology laboratory with glowing emerald DNA double-helix models, microscopic nanobots repairing cellular structures, soft cyan and bio-luminescent mint lighting in an ultra-clean crystalline enclosure." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNPWnl_zHEjwcSO9RZOrIbDoBQsB00Bw_e_l-q3u7XVLCD_JF-0xvQoGs94Ke6QZn-4pCHOtt6UcX5cDFM2MIqdBwgGKcx-ybIW_w-BjuQd05t7LNmjqBad9_nyqASfVwpzFRr0j9HFE4LHonuwt0851zx2JkO6TTq21rXusKjvsEiO4FXwJxjH24WEsgEPtg9UrSednDK0WXPpLcIpCWrfS5n2GVm6C9d0F5xX-k"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/40 to-transparent"></div>
+<div class="absolute bottom-2 left-2 flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded text-[11px] font-label-mono-sm text-tertiary-fixed-dim">
+<span class="material-symbols-outlined text-[14px]">biotech</span>
+          HEALTHCARE &amp; BIOTECH
+        </div>
+</div>
+<!-- Title & Role -->
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">
+          Bionic Longevity Specialist &amp; CRISPR Nanobot Synthesizer
+        </h2>
+<div class="flex items-center justify-between text-outline font-label-mono-sm text-label-mono-sm mt-1">
+<span>EST. COMPENSATION (2050):</span>
+<span class="text-tertiary-fixed-dim font-bold">340K – 580K Q-CREDITS</span>
+</div>
+</div>
+<!-- Core Skills Chips -->
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono-sm text-[11px]">Synthetic Biology</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono-sm text-[11px]">Neural Implants</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono-sm text-[11px]">Micro-Fluidics</span>
+</div>
+<!-- Planetary Impact -->
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Synthesizing micro-robotic cellular scaffolds that extend healthy human lifespan past 140 planetary cycles.
+      </p>
+<!-- Action Cluster -->
+<div class="pt-space-xs flex items-center gap-space-xs">
+<button class="flex-1 py-2.5 px-3 rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-[14px] font-bold flex items-center justify-center gap-1.5 shadow-md active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+          Simulate Career Track
+        </button>
+<button class="gemini-trigger p-2.5 rounded-lg bg-surface-container text-secondary hover:text-primary active:scale-95 transition-all flex items-center justify-center" title="Ask Gemini AI About This Field">
+<span class="material-symbols-outlined text-[20px]">neurology</span>
+</button>
+</div>
+</article>
+<!-- CARD 4: Engineering & Sustainable Technology -->
+<article class="career-card group relative bg-surface-container-low rounded-xl p-space-md shadow-xl overflow-hidden flex flex-col gap-space-sm" data-category="space-quantum high-demand">
+<div class="absolute -right-12 -top-12 w-32 h-32 rounded-full bg-primary-fixed/15 blur-2xl group-hover:bg-primary-fixed/25 transition-all"></div>
+<!-- Top Badges / Index -->
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-primary-fixed-dim">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-mono-sm text-[10px] font-semibold tracking-wider">🌱 TERRAFORMING &amp; ZERO CARBON</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-primary">MATCH 85.1%</span>
+</div>
+<!-- Visual Spotlight Anchor -->
+<div class="relative w-full h-32 rounded-lg overflow-hidden bg-surface-container-highest mt-1">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Massive orbital solar array collector station overlooking planet Earth from space orbit, compact fusion reactor glowing with brilliant cyan plasma magnetic field, cinematic sci-fi engineering scene." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf3HaDtlt238F5hbTBKWXSTPh2412jPakoyJT7iix1T-_KkY0MvuMUHiHWNw-q5ByovC0uh3e8spkGg0jCw3gOaaRMFRpEh7ZYTo4nWKXYDCRKBI4sNTmmkynAnfnoyVtvuJCoot6pgem6bQkKLtsfi2RCnme1OGC8B-SkyxrdhXYGRSIuHIm9MofrDejnO2B_TStYcS7906ObeSb0Ah7xPWgjR7QtE4HE7Fyg4NE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/40 to-transparent"></div>
+<div class="absolute bottom-2 left-2 flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded text-[11px] font-label-mono-sm text-primary">
+<span class="material-symbols-outlined text-[14px]">solar_power</span>
+          SUSTAINABLE ENGINEERING
+        </div>
+</div>
+<!-- Title & Role -->
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">
+          Orbital Solar Grid Engineer &amp; Fusion Reactor Specialist
+        </h2>
+<div class="flex items-center justify-between text-outline font-label-mono-sm text-label-mono-sm mt-1">
+<span>EST. COMPENSATION (2050):</span>
+<span class="text-tertiary-fixed-dim font-bold">275K – 440K Q-CREDITS</span>
+</div>
+</div>
+<!-- Core Skills Chips -->
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono-sm text-[11px]">Tokamak Confinement</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono-sm text-[11px]">Smart Grids</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono-sm text-[11px]">Atmospheric Capture</span>
+</div>
+<!-- Planetary Impact -->
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Harnessing zero-emission magnetic confinement reactors to power terraforming stations across continents.
+      </p>
+<!-- Action Cluster -->
+<div class="pt-space-xs flex items-center gap-space-xs">
+<button class="flex-1 py-2.5 px-3 rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-[14px] font-bold flex items-center justify-center gap-1.5 shadow-md active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+          Simulate Career Track
+        </button>
+<button class="gemini-trigger p-2.5 rounded-lg bg-surface-container text-secondary hover:text-primary active:scale-95 transition-all flex items-center justify-center" title="Ask Gemini AI About This Field">
+<span class="material-symbols-outlined text-[20px]">neurology</span>
+</button>
+</div>
+</article>
+<!-- CARD 5: Business & Entrepreneurship -->
+<article class="career-card group relative bg-surface-container-low rounded-xl p-space-md shadow-xl overflow-hidden flex flex-col gap-space-sm" data-category="no-code">
+<div class="absolute -right-12 -top-12 w-32 h-32 rounded-full bg-secondary/15 blur-2xl group-hover:bg-secondary/25 transition-all"></div>
+<!-- Top Badges / Index -->
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-secondary">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim"></span>
+<span class="font-label-mono-sm text-[10px] font-semibold tracking-wider">🚀 DECENTRALIZED VENTURE &amp; DAO</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary-fixed">MATCH 82.6%</span>
+</div>
+<!-- Visual Spotlight Anchor -->
+<div class="relative w-full h-32 rounded-lg overflow-hidden bg-surface-container-highest mt-1">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Futuristic algorithmic financial boardroom with 3D floating tokenomic holographic projections, luminous purple decentralized graphs, cyber venture capitalists collaborating with holographic AI avatars." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAc-BYvO82-EO6-OcqscwC2Enxxg8JvgXYuZtl9n3vPyn2UC0Yk12B_ITYaixsgYPa4Dk-8fFSu0QA0HL71BKLrKOsxXrYf9O0jOai7QxK5tiuIAifCkkt2jPDrWa99_Usyj7EUSekw3aROq5JpmAc_AQBzenKbqKZD3Vzutkj7G-xDkMwNC8fEnRwkD_oVOQD1ucz9MqAM0QsGILOh9SzcS9CmABd6w5JLkrnKGE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/40 to-transparent"></div>
+<div class="absolute bottom-2 left-2 flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded text-[11px] font-label-mono-sm text-secondary">
+<span class="material-symbols-outlined text-[14px]">query_stats</span>
+          BUSINESS &amp; VENTURE
+        </div>
+</div>
+<!-- Title & Role -->
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">
+          Autonomous Venture Incubator Lead &amp; Algorithmic Market Strategist
+        </h2>
+<div class="flex items-center justify-between text-outline font-label-mono-sm text-label-mono-sm mt-1">
+<span>EST. COMPENSATION (2050):</span>
+<span class="text-tertiary-fixed-dim font-bold">250K – 490K Q-CREDITS</span>
+</div>
+</div>
+<!-- Core Skills Chips -->
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono-sm text-[11px]">AI Tokenomics</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono-sm text-[11px]">Cross-Border Virtual Trade</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono-sm text-[11px]">Predictive Economics</span>
+</div>
+<!-- Planetary Impact -->
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Governing self-capitalizing DAOs that rapidly fund zero-emission space expeditions and decentralized research clusters.
+      </p>
+<!-- Action Cluster -->
+<div class="pt-space-xs flex items-center gap-space-xs">
+<button class="flex-1 py-2.5 px-3 rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-[14px] font-bold flex items-center justify-center gap-1.5 shadow-md active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+          Simulate Career Track
+        </button>
+<button class="gemini-trigger p-2.5 rounded-lg bg-surface-container text-secondary hover:text-primary active:scale-95 transition-all flex items-center justify-center" title="Ask Gemini AI About This Field">
+<span class="material-symbols-outlined text-[20px]">neurology</span>
+</button>
+</div>
+</article>
+<!-- CARD 6: Creative Technology & Digital Design -->
+<article class="career-card group relative bg-surface-container-low rounded-xl p-space-md shadow-xl overflow-hidden flex flex-col gap-space-sm" data-category="no-code">
+<div class="absolute -right-12 -top-12 w-32 h-32 rounded-full bg-primary-container/15 blur-2xl group-hover:bg-primary-container/25 transition-all"></div>
+<!-- Top Badges / Index -->
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-primary-fixed-dim">
+<span class="w-2 h-2 rounded-full bg-primary-fixed-dim"></span>
+<span class="font-label-mono-sm text-[10px] font-semibold tracking-wider">🎨 SPATIAL &amp; SYNTHETIC MEDIA</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-primary">MATCH 93.9%</span>
+</div>
+<!-- Visual Spotlight Anchor -->
+<div class="relative w-full h-32 rounded-lg overflow-hidden bg-surface-container-highest mt-1">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Creative artist in holographic reality glasses sculpting infinite virtual worlds made of shimmering light particles, spatial 3D architecture, futuristic digital dreamscape in vibrant cyan and magenta tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBG7PjD5Idm83AH7EaQhiuFODqCLsQ__RMOeTGCRwQPnhwTrwg5A1tWpa2jpGsnLtYGwFOZqbiE1I9nsFECpuv5ljL2UiAQdO27avPIzSMXqULfTzTOcUz_DtRy7hVr8qFUmXDSWlOroQ-J6wXrcEUckb1GUIjj9gv7TPtaMWV1n_-jd-trJxHTmii7bPqIPXwvfdUwUrYpxVtAGwql3Ah8yxARwaDlUFx7V7WLYi8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/40 to-transparent"></div>
+<div class="absolute bottom-2 left-2 flex items-center gap-1 bg-surface-container-lowest/80 backdrop-blur-md px-2 py-0.5 rounded text-[11px] font-label-mono-sm text-primary">
+<span class="material-symbols-outlined text-[14px]">view_in_ar</span>
+          CREATIVE TECHNOLOGY
+        </div>
+</div>
+<!-- Title & Role -->
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">
+          Holographic Experience Architect &amp; Neural Metaverse Worldbuilder
+        </h2>
+<div class="flex items-center justify-between text-outline font-label-mono-sm text-label-mono-sm mt-1">
+<span>EST. COMPENSATION (2050):</span>
+<span class="text-tertiary-fixed-dim font-bold">230K – 410K Q-CREDITS</span>
+</div>
+</div>
+<!-- Core Skills Chips -->
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono-sm text-[11px]">Spatial Computing</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono-sm text-[11px]">Unreal Engine 6</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-mono-sm text-[11px]">Generative Haptics</span>
+</div>
+<!-- Planetary Impact -->
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Crafting sensory-rich alternate digital habitats for inter-species diplomacy, creative expression, and spatial memory archiving.
+      </p>
+<!-- Action Cluster -->
+<div class="pt-space-xs flex items-center gap-space-xs">
+<button class="flex-1 py-2.5 px-3 rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-[14px] font-bold flex items-center justify-center gap-1.5 shadow-md active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+          Simulate Career Track
+        </button>
+<button class="gemini-trigger p-2.5 rounded-lg bg-surface-container text-secondary hover:text-primary active:scale-95 transition-all flex items-center justify-center" title="Ask Gemini AI About This Field">
+<span class="material-symbols-outlined text-[20px]">neurology</span>
+</button>
+</div>
+</article>
+</div>
+<!-- Gemini AI Quick Launch Modal / Drawer (Floating Glass Overlay) -->
+<div class="fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-md hidden flex-col justify-end p-margin-mobile" id="geminiDialogueOverlay">
+<div class="w-full bg-surface-container-high rounded-xl p-space-md shadow-2xl flex flex-col gap-space-sm relative">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container shadow-[0_0_8px_#00f0ff]"></span>
+<span class="font-label-mono-sm text-label-mono-sm text-primary tracking-wider uppercase">GEMINI QUANTUM MENTOR</span>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface p-1" id="closeGeminiBtn">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px] shrink-0">psychology</span>
+<div class="flex flex-col gap-1">
+<p class="font-body-sm text-body-sm text-on-surface" id="geminiDialogueText">
+            "Greetings Explorer. I can break down real-time skill gaps, planetary salary trajectories, and step-by-step 2050 simulation pathways for this profession. What would you like to investigate first?"
+          </p>
+<span class="font-label-mono-sm text-[10px] text-tertiary-fixed-dim">SYNAPSE THREAD ACTIVE</span>
+</div>
+</div>
+<!-- Quick prompts -->
+<div class="flex flex-col gap-1.5">
+<button class="text-left px-3 py-2 rounded bg-surface-container hover:bg-surface-bright text-on-surface font-body-sm text-[13px] flex items-center justify-between">
+<span>What daily planetary challenges do they tackle?</span>
+<span class="material-symbols-outlined text-[16px] text-primary">arrow_forward</span>
+</button>
+<button class="text-left px-3 py-2 rounded bg-surface-container hover:bg-surface-bright text-on-surface font-body-sm text-[13px] flex items-center justify-between">
+<span>Compare this role with my Level 04 Explorer skill tree.</span>
+<span class="material-symbols-outlined text-[16px] text-primary">arrow_forward</span>
+</button>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<input class="flex-1 px-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none" placeholder="Ask Gemini anything about this frontier career..." type="text"/>
+<button class="p-2 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">send</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Client Micro-Interactions Script -->
+<script>
+  // Filter chips functionality
+  const chips = document.querySelectorAll('.filter-chip');
+  const cards = document.querySelectorAll('.career-card');
+  const searchInput = document.getElementById('careerSearchInput');
+
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      chips.forEach(c => {
+        c.classList.remove('active', 'bg-primary-container', 'text-on-primary-container');
+        c.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      chip.classList.add('active', 'bg-primary-container', 'text-on-primary-container');
+      chip.classList.remove('bg-surface-container', 'text-on-surface-variant');
+
+      const filterVal = chip.getAttribute('data-filter');
+      filterCards(filterVal, searchInput.value.toLowerCase());
+    });
+  });
+
+  searchInput.addEventListener('input', (e) => {
+    const activeChip = document.querySelector('.filter-chip.active');
+    const filterVal = activeChip ? activeChip.getAttribute('data-filter') : 'all';
+    filterCards(filterVal, e.target.value.toLowerCase());
+  });
+
+  function filterCards(category, searchQuery) {
+    cards.forEach(card => {
+      const cardText = card.innerText.toLowerCase();
+      const cardCat = card.getAttribute('data-category') || '';
+      
+      const matchesCategory = (category === 'all') || cardCat.includes(category);
+      const matchesSearch = !searchQuery || cardText.includes(searchQuery);
+
+      if (matchesCategory && matchesSearch) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  // Toggle Radar Matrix Drawer
+  const toggleRadarBtn = document.getElementById('toggleRadarMatrixBtn');
+  const radarDrawer = document.getElementById('radarMatrixDrawer');
+  let isRadarOpen = true;
+
+  toggleRadarBtn.addEventListener('click', () => {
+    isRadarOpen = !isRadarOpen;
+    if (isRadarOpen) {
+      radarDrawer.style.display = 'flex';
+      toggleRadarBtn.querySelector('span:last-child').textContent = 'Compare Pathways';
+    } else {
+      radarDrawer.style.display = 'none';
+      toggleRadarBtn.querySelector('span:last-child').textContent = 'Show Telemetry';
+    }
+  });
+
+  // Gemini AI Quick Trigger Modal
+  const geminiTriggers = document.querySelectorAll('.gemini-trigger');
+  const geminiModal = document.getElementById('geminiDialogueOverlay');
+  const closeGeminiBtn = document.getElementById('closeGeminiBtn');
+  const geminiText = document.getElementById('geminiDialogueText');
+
+  geminiTriggers.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const card = e.target.closest('.career-card');
+      const title = card ? card.querySelector('h2').textContent.trim() : 'Frontier Career';
+      geminiText.innerHTML = `Synthesizing neural simulation for <strong>${title}</strong>. I've calibrated your Level 04 Explorer telemetry. What aspect of this 2050 trajectory would you like to explore?`;
+      geminiModal.classList.remove('hidden');
+      geminiModal.classList.add('flex');
+    });
+  });
+
+  closeGeminiBtn.addEventListener('click', () => {
+    geminiModal.classList.add('hidden');
+    geminiModal.classList.remove('flex');
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-8px_32px_rgba(0,0,0,0.7)]" data-active-classes="text-primary-fixed-dim font-medium"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[44px] min-h-[44px] px-2 text-on-surface-variant transition-all hover:text-primary" data-path="discovery" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-mono-sm text-[10px] tracking-wider uppercase">Discovery</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[44px] min-h-[44px] px-2 transition-all text-primary-fixed-dim font-medium" data-path="explorer" href="#"><span class="material-symbols-outlined text-[22px]">travel_explore</span><span class="font-label-mono-sm text-[10px] tracking-wider uppercase">Explorer</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[44px] min-h-[44px] px-2 text-on-surface-variant transition-all hover:text-primary" data-path="roadmaps" href="#"><span class="material-symbols-outlined text-[22px]">route</span><span class="font-label-mono-sm text-[10px] tracking-wider uppercase">Roadmaps</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[44px] min-h-[44px] px-2 text-on-surface-variant transition-all hover:text-primary" data-path="gemini-ai" href="#"><span class="material-symbols-outlined text-[22px]">neurology</span><span class="font-label-mono-sm text-[10px] tracking-wider uppercase">Gemini AI</span></a></div></nav></body></html>
